@@ -1,0 +1,2684 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' 'unsafe-eval'; connect-src *;">
+<meta name="referrer" content="no-referrer-when-downgrade">
+<title>مخطط الدرس الذكي — مدرسة ذكور بيت عوا الثانوية</title>
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--pr:#1a3a5c;--pl:#2d6a9f;--ac:#c5962b;--al:#f0c94a;--bg:#f4f1eb;--card:#fff;--tx:#1a1a2e;--mu:#6b7280;--bd:#d8d0c0;--sh:0 4px 20px rgba(26,58,92,.10);--rd:14px}
+.dark{--pr:#7eb8f7;--pl:#5a9fd4;--ac:#f0c94a;--bg:#0f172a;--card:#1e293b;--tx:#e2e8f0;--mu:#94a3b8;--bd:#334155;--sh:0 4px 20px rgba(0,0,0,.35)}
+.tg{--pr:#1a5c3a;--pl:#2d9f6a;--bg:#f0f7f2;--card:#fff;--tx:#1a2e1a;--bd:#b8d8c0}
+.tp{--pr:#4a1a7c;--pl:#7a3abf;--bg:#f5f0fb;--card:#fff;--tx:#1a0a2e;--bd:#cfc0e8}
+.tr{--pr:#7c1a3a;--pl:#bf3a6a;--bg:#fdf0f4;--card:#fff;--tx:#2e0a1a;--bd:#e8c0cc}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Tajawal',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh;direction:rtl;transition:background .3s,color .3s}
+.topbar{position:sticky;top:0;z-index:900;background:var(--card);border-bottom:1.5px solid var(--bd);box-shadow:var(--sh);padding:8px 16px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.logo{font-family:'Amiri',serif;font-size:17px;font-weight:700;color:var(--pr);flex:1}
+.tbacts{display:flex;gap:6px;flex-wrap:wrap}
+.tb{display:flex;align-items:center;gap:5px;padding:6px 12px;border-radius:8px;border:1.5px solid var(--bd);background:var(--bg);color:var(--tx);font-family:'Tajawal',sans-serif;font-size:12px;font-weight:600;cursor:pointer;transition:.2s}
+.tb:hover{border-color:var(--pr);color:var(--pr)}.tb.on{background:var(--pr);color:#fff;border-color:var(--pr)}
+.nav{display:flex;background:var(--card);border-bottom:2px solid var(--bd);padding:0 16px;position:sticky;top:49px;z-index:800;overflow-x:auto}
+.nt{padding:11px 14px;border:none;background:transparent;font-family:'Tajawal',sans-serif;font-size:13px;font-weight:600;color:var(--mu);cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-2px;transition:.2s;white-space:nowrap}
+.nt.on{color:var(--pr);border-bottom-color:var(--pr)}
+.pnl{display:none}.pnl.on{display:block}
+.wrap{max-width:1060px;margin:0 auto;padding:20px 16px 70px}
+.pw{margin-bottom:18px}
+.pl{display:flex;justify-content:space-between;font-size:11px;color:var(--mu);margin-bottom:3px}
+.pt{background:var(--bg);border-radius:50px;height:7px;overflow:hidden;border:1px solid var(--bd)}
+.pf{height:100%;border-radius:50px;background:linear-gradient(90deg,var(--pr),var(--ac));transition:width .5s;width:0%}
+.card{background:var(--card);border-radius:var(--rd);box-shadow:var(--sh);border:1px solid rgba(212,168,67,.13);overflow:hidden;margin-bottom:14px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-1px);box-shadow:0 7px 28px rgba(26,58,92,.13)}
+.ch{display:flex;align-items:center;gap:11px;padding:13px 16px;border-bottom:1px solid rgba(212,168,67,.10);cursor:pointer;user-select:none}
+.ci{width:38px;height:38px;border-radius:9px;display:flex;align-items:center;justify-content:center;font-size:17px;flex-shrink:0}
+.ct{flex:1}.ct h3{font-size:14px;font-weight:700;color:var(--pr);margin-bottom:1px}.ct p{font-size:11px;color:var(--mu)}
+.ctg{width:24px;height:24px;border-radius:50%;border:none;background:var(--bg);color:var(--mu);cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:11px;flex-shrink:0}
+.cb{padding:16px}.cb.h{display:none}
+.bl .ch{background:linear-gradient(135deg,rgba(240,247,255,.9),rgba(232,242,252,.9))}.bl .ci{background:rgba(26,58,92,.09)}
+.gn .ch{background:linear-gradient(135deg,rgba(240,255,246,.9),rgba(232,250,240,.9))}.gn .ci{background:rgba(46,125,82,.09)}
+.gd .ch{background:linear-gradient(135deg,rgba(255,251,240,.9),rgba(253,245,224,.9))}.gd .ci{background:rgba(197,150,43,.11)}
+.pu .ch{background:linear-gradient(135deg,rgba(248,240,255,.9),rgba(242,232,255,.9))}.pu .ci{background:rgba(120,60,180,.09)}
+.rd .ch{background:linear-gradient(135deg,rgba(255,240,240,.9),rgba(255,232,232,.9))}.rd .ci{background:rgba(180,40,40,.09)}
+.tl .ch{background:linear-gradient(135deg,rgba(240,255,254,.9),rgba(224,250,248,.9))}.tl .ci{background:rgba(20,140,130,.09)}
+.or .ch{background:linear-gradient(135deg,rgba(255,248,240,.9),rgba(253,240,224,.9))}.or .ci{background:rgba(220,120,30,.11)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:11px;margin-bottom:16px}
+.fld{display:flex;flex-direction:column;gap:4px}
+.fld label{font-size:11px;font-weight:700;color:var(--pr)}
+input[type=text],input[type=date],select,textarea{font-family:'Tajawal',sans-serif;font-size:13px;color:var(--tx);background:var(--card);border:1.5px solid var(--bd);border-radius:8px;padding:8px 11px;direction:rtl;transition:.2s;width:100%}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--pl);box-shadow:0 0 0 3px rgba(45,106,159,.09)}
+select{cursor:pointer}
+textarea{resize:vertical;min-height:95px;line-height:1.8}
+.ol{display:flex;flex-direction:column;gap:8px}
+.or2{display:flex;align-items:center;gap:8px}.or2 input{flex:1}
+.bdg{padding:4px 9px;border-radius:20px;font-size:10px;font-weight:700;white-space:nowrap;min-width:58px;text-align:center}
+.cog{background:#dbeafe;color:#1e40af}.skl{background:#d1fae5;color:#065f46}.aff{background:#fce7f3;color:#9d174d}
+.xb{width:26px;height:26px;border:none;background:#fee2e2;color:#dc2626;border-radius:6px;cursor:pointer;font-size:12px;flex-shrink:0;display:flex;align-items:center;justify-content:center}
+.xb:hover{background:#fecaca}
+.addb{display:flex;align-items:center;gap:5px;padding:7px 12px;background:var(--bg);border:1.5px dashed var(--bd);border-radius:8px;font-family:'Tajawal',sans-serif;font-size:12px;color:var(--mu);cursor:pointer;transition:.2s;margin-top:3px}
+.addb:hover{border-color:var(--pl);color:var(--pl)}
+.sr{display:flex;align-items:flex-start;gap:8px;margin-bottom:8px}
+.sn{background:var(--pr);color:#fff;width:25px;height:25px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:9px}
+.rr{display:flex;align-items:center;gap:9px;padding:8px 0;border-bottom:1px dashed var(--bd)}.rr:last-child{border:none}
+.rr span{flex:1;font-size:13px}
+.sts{display:flex;gap:3px}
+.st{width:25px;height:25px;border-radius:50%;border:1.5px solid var(--bd);cursor:pointer;font-size:10px;display:flex;align-items:center;justify-content:center;transition:.15s}
+.st:hover,.st.on{background:var(--ac);border-color:var(--ac);color:#fff}
+.ng{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+@media(max-width:560px){.ng{grid-template-columns:1fr}}
+.nb label{display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:4px}
+.acts{display:flex;gap:9px;justify-content:center;flex-wrap:wrap;margin-top:24px;padding-bottom:16px}
+.btn{display:flex;align-items:center;gap:6px;padding:11px 22px;border-radius:10px;font-family:'Tajawal',sans-serif;font-size:13px;font-weight:700;cursor:pointer;border:none;transition:.2s}
+.bp{background:linear-gradient(135deg,var(--pr),var(--pl));color:#fff;box-shadow:0 4px 14px rgba(26,58,92,.23)}.bp:hover{transform:translateY(-2px)}
+.bg{background:linear-gradient(135deg,var(--ac),var(--al));color:#fff;box-shadow:0 4px 14px rgba(197,150,43,.23)}.bg:hover{transform:translateY(-2px)}
+.bo{background:var(--card);color:var(--pr);border:2px solid var(--pr)}.bo:hover{background:var(--pr);color:#fff}
+.bd2{background:#fee2e2;color:#dc2626;border:1.5px solid #fca5a5}.bd2:hover{background:#dc2626;color:#fff}
+.sg{display:grid;grid-template-columns:repeat(auto-fill,minmax(155px,1fr));gap:12px;margin-bottom:20px}
+.sc{background:var(--card);border-radius:12px;padding:16px;box-shadow:var(--sh);border:1px solid var(--bd);text-align:center}
+.si{font-size:28px;margin-bottom:6px}.sv{font-size:26px;font-weight:800;color:var(--pr);font-family:'Amiri',serif}.sl{font-size:11px;color:var(--mu);margin-top:2px}
+.br{display:flex;align-items:center;gap:9px;margin-bottom:9px}
+.brl{font-size:12px;width:115px;flex-shrink:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.brt{flex:1;background:var(--bg);border-radius:50px;height:12px;overflow:hidden}
+.brf{height:100%;border-radius:50px;transition:width .8s}
+.brc{font-size:11px;font-weight:700;color:var(--mu);width:20px;text-align:center}
+.sl2{display:flex;flex-direction:column;gap:9px}
+.si2{background:var(--card);border:1px solid var(--bd);border-radius:11px;padding:12px 14px;display:flex;align-items:center;gap:11px;cursor:pointer;transition:.2s}
+.si2:hover{border-color:var(--pl);box-shadow:var(--sh)}
+.si2-i{flex:1}.si2-i h4{font-size:13px;font-weight:700;margin-bottom:2px}.si2-i p{font-size:11px;color:var(--mu)}
+.si2-a{display:flex;gap:5px}
+.rrr{display:flex;align-items:center;gap:8px;padding:9px;background:var(--bg);border-radius:8px;margin-bottom:7px}
+.rrr input[type=text]{flex:1;background:transparent;border:none;box-shadow:none}
+.rrr input[type=time]{padding:5px 9px;border:1.5px solid var(--bd);border-radius:7px;background:var(--card);color:var(--tx);font-family:'Tajawal',sans-serif;font-size:12px}
+.trow{display:flex;align-items:center;gap:8px;padding:7px 9px;background:var(--bg);border-radius:8px;margin-bottom:5px}
+.trow span{flex:1;font-size:13px}
+.ag{display:grid;grid-template-columns:repeat(auto-fill,minmax(95px,1fr));gap:9px;margin-bottom:10px}
+.ai2{border:1.5px solid var(--bd);border-radius:9px;overflow:hidden;position:relative;aspect-ratio:1;background:var(--bg);display:flex;align-items:center;justify-content:center}
+.ai2 img{width:100%;height:100%;object-fit:cover}
+.adl{position:absolute;top:3px;left:3px;width:19px;height:19px;background:rgba(220,38,38,.9);color:#fff;border:none;border-radius:50%;cursor:pointer;font-size:10px}
+.aadd{border:2px dashed var(--bd);border-radius:9px;padding:16px;text-align:center;cursor:pointer;font-size:12px;color:var(--mu);transition:.2s;display:block}
+.aadd:hover{border-color:var(--pr);color:var(--pr)}
+.thdots{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.thd{width:34px;height:34px;border-radius:50%;cursor:pointer;border:3px solid transparent;transition:.2s;display:flex;align-items:center;justify-content:center;font-size:13px}
+.thd.on{border-color:var(--tx);transform:scale(1.15)}
+.ov{display:none;position:fixed;inset:0;background:rgba(0,0,0,.5);z-index:1000;align-items:center;justify-content:center;padding:14px}
+.ov.open{display:flex}
+.mb{background:var(--card);border-radius:18px;max-width:700px;width:100%;max-height:87vh;overflow-y:auto;box-shadow:0 20px 55px rgba(0,0,0,.28);padding:22px;direction:rtl}
+.mh{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px}
+.mh h2{font-family:'Amiri',serif;color:var(--pr);font-size:19px}
+.mc{border:none;background:var(--bg);border-radius:50%;width:32px;height:32px;cursor:pointer;font-size:14px;color:var(--mu)}
+.toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(90px);background:var(--pr);color:#fff;padding:11px 22px;border-radius:50px;font-size:13px;font-weight:600;box-shadow:0 8px 25px rgba(0,0,0,.2);z-index:9999;transition:transform .3s;display:flex;align-items:center;gap:6px}
+.toast.show{transform:translateX(-50%) translateY(0)}
+.bell{position:fixed;bottom:22px;left:22px;width:48px;height:48px;background:var(--ac);border-radius:50%;border:none;font-size:20px;cursor:pointer;box-shadow:0 4px 18px rgba(197,150,43,.38);z-index:400;transition:.2s;display:flex;align-items:center;justify-content:center}
+.bell:hover{transform:scale(1.1)}
+.bb{position:absolute;top:-3px;right:-3px;background:#dc2626;color:#fff;border-radius:50%;width:17px;height:17px;font-size:9px;font-weight:700;display:flex;align-items:center;justify-content:center}
+@media(max-width:600px){.logo{font-size:14px}.grid{grid-template-columns:1fr 1fr}.acts{flex-direction:column}.btn{justify-content:center}}
+@media print{
+  /* إخفاء عناصر الواجهة */
+  .topbar,.nav,.acts,.bell,.toast,
+  .ov,.tb,.addb,.xb,.ctg,.adl,
+  #timer-bar,#auto-banner,#quality-bar,
+  #tab-saved,#tab-stats,#tab-remind{
+    display:none!important
+  }
+  /* إظهار صفحة الخطة فقط */
+  #tab-plan{display:block!important}
+  .pnl{display:none!important}
+  #tab-plan.pnl{display:block!important}
+  /* الأقسام */
+  .card{
+    box-shadow:none!important;
+    border:1.5px solid #aaa!important;
+    margin-bottom:8px;
+    page-break-inside:avoid;
+    break-inside:avoid
+  }
+  .cb{display:block!important}
+  .cb.h{display:block!important}
+  /* الترويسة */
+  #print-header{display:block!important}
+  /* الجسم */
+  body{
+    background:#fff!important;
+    color:#000!important;
+    font-size:12px;
+    font-family:'Tajawal',sans-serif;
+    direction:rtl
+  }
+  .wrap{max-width:100%;padding:6px;margin:0}
+  /* الحقول */
+  input,select,textarea{
+    border:none!important;
+    background:transparent!important;
+    font-size:12px!important;
+    color:#000!important;
+    padding:2px 4px!important;
+    resize:none!important
+  }
+  /* إخفاء placeholder */
+  input::placeholder,textarea::placeholder{color:transparent!important}
+  /* صفحة A4 */
+  @page{margin:12mm;size:A4}
+}
+@keyframes spin{to{transform:rotate(360deg)}}
+</style>
+  <!-- jsPDF — توليد PDF حقيقي في المتصفح -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+<div class="topbar">
+  <div class="logo" style="display:flex;flex-direction:column;gap:1px">
+    <span style="font-size:13px;font-weight:900;color:var(--pr)">🏫 مدرسة ذكور بيت عوا الثانوية</span>
+    <span style="font-size:11px;color:var(--ac);font-weight:700">✨ مخطط الدرس الذكي | مجاني</span>
+    <span style="display:flex;gap:8px;font-size:10px;color:var(--mu);font-weight:400">
+      <span id="live-date" style="color:var(--ac)"></span>
+      <span id="live-clock" style="color:var(--pr);font-weight:700;font-family:monospace"></span>
+    </span>
+    <span style="font-size:9px;color:var(--mu)">إعداد وتصميم: أ. خليل محمد خليل عطيله</span>
+  </div>
+  <div class="tbacts">
+    <button class="tb" onclick="saveLesson()">💾 حفظ</button>
+    <button class="tb" onclick="doPrint()" style="background:linear-gradient(135deg,#1a3a5c,#2d6a9f);color:#fff;border:none;font-weight:900">🖨️ طباعة HP</button>
+    <button class="tb" onclick="openTheme()">🎨 ثيم</button>
+    <button class="tb" id="dbtn" onclick="toggleDark()">🌙 ليلي</button>
+  </div>
+</div>
+<div class="nav">
+  <button class="nt on" onclick="showTab('plan',this)">📝 خطة الدرس</button>
+  <button class="nt" onclick="showTab('saved',this)">💾 المحفوظات</button>
+  <button class="nt" onclick="showTab('stats',this)">📊 الإحصائيات</button>
+  <button class="nt" onclick="showTab('remind',this)">🔔 التذكيرات</button>
+</div>
+
+<div id="tab-plan" class="pnl on"><div class="wrap">
+  <div class="pw">
+    <div class="pl"><span>نسبة اكتمال الخطة</span><span id="ptxt">0%</span></div>
+    <div class="pt"><div class="pf" id="pbar"></div></div>
+  </div>
+  <div id="quality-bar" style="display:flex;align-items:center;gap:10px;padding:9px 14px;background:var(--card);border-radius:10px;margin-bottom:12px;border:1px solid var(--bd);font-family:Tajawal,sans-serif">
+    <span style="font-size:11px;font-weight:700;color:var(--pr)">⭐ جودة الخطة</span>
+    <span id="q-score" style="font-size:18px;font-weight:900;color:var(--ac);min-width:40px">—</span>
+    <div id="q-stars" style="display:flex;gap:2px"></div>
+    <span id="q-label" style="font-size:11px;color:var(--mu)"></span>
+    <div style="flex:1"></div>
+    <span id="q-tip" style="font-size:10px;color:var(--mu);font-style:italic"></span>
+  </div>
+  <div id="print-header" style="display:none;text-align:center;margin-bottom:14px;padding-bottom:10px;border-bottom:3px solid #1a3a5c;font-family:Tajawal,sans-serif;direction:rtl">
+    <div style="font-size:11px;color:#c5962b;font-weight:700;margin-bottom:2px">وزارة التربية والتعليم العالي — فلسطين</div>
+    <div id="ph-ministry" style="font-size:12px;color:#555;margin-bottom:2px">مديرية التربية والتعليم / جنوب الخليل</div>
+    <div id="ph-school" style="font-size:20px;font-weight:900;color:#1a3a5c;font-family:Amiri,serif;margin-bottom:4px">مدرسة ذكور بيت عوا الثانوية</div>
+    <div style="display:flex;justify-content:center;gap:16px;font-size:11px;color:#444;margin-bottom:4px;flex-wrap:wrap">
+      <span>👨🏫 <strong id="ph-teacher">المعلم</strong></span>
+      <span>📚 <strong id="ph-semester">الفصل الأول</strong></span>
+      <span>📅 <strong id="ph-date"></strong></span>
+      <span>🕐 <strong id="ph-time"></strong></span>
+    </div>
+    <div style="display:inline-block;background:linear-gradient(135deg,#1a3a5c,#2d6a9f);color:#fff;padding:4px 18px;border-radius:4px;font-size:12px;font-weight:700">
+      خطة درس يومية — العام الدراسي 2024/2025
+    </div>
+    <div style="margin-top:6px;font-size:10px;color:#555;font-weight:700">
+      إعداد وتصميم: أ. خليل محمد خليل عطيله &nbsp;|&nbsp; © جميع الحقوق محفوظة 2025
+    </div>
+    <div style="font-size:9px;color:#aaa;margin-top:3px;font-style:italic">
+      ✨ مدعوم بالذكاء الاصطناعي Claude — Anthropic &nbsp;|&nbsp; المنهاج الفلسطيني
+    </div>
+  </div>
+  <!-- INFO -->
+  <div class="card">
+    <div class="ch bl" onclick="tog(this)"><div class="ci">🏫</div><div class="ct"><h3>المعلومات الأساسية</h3><p>بيانات المعلم والمادة والصف</p></div><button class="ctg">▼</button></div>
+    <div class="cb">
+      <div class="grid">
+        <div class="fld"><label>🏫 المدرسة</label>
+  <select id="f-school" onchange="prog();localStorage.setItem('lp_school',this.value)" style="width:100%;font-family:Tajawal,sans-serif;font-size:13px;padding:8px 11px;border:1.5px solid var(--bd);border-radius:8px;color:var(--tx);background:var(--card)">
+    <option value="مدرسة ذكور بيت عوا الثانوية">مدرسة ذكور بيت عوا الثانوية</option>
+    <option value="مدرسة ذكور خرسا الثانوية">مدرسة ذكور خرسا الثانوية</option>
+  </select></div><div class="fld"><label>🏛️ المديرية</label><input type="text" id="f-ministry" value="مديرية التربية / جنوب الخليل" oninput="prog()"></div><div class="fld"><label>👨🏫 معلم المادة</label>
+  <select id="f-teacher" onchange="prog();localStorage.setItem('lp_teacher',this.value)" style="width:100%;font-family:Tajawal,sans-serif;font-size:13px;padding:8px 11px;border:1.5px solid var(--bd);border-radius:8px;color:var(--tx);background:var(--card)">
+    <option value="أ. خليل محمد خليل عطيله">أ. خليل محمد خليل عطيله</option>
+    <option value="أ. حمزة محمد خليل عطيله">أ. حمزة محمد خليل عطيله</option>
+  </select></div>
+        <div class="fld"><label>📖 المادة</label>
+          <select id="f-subject" onchange="prog()">
+            <option value="">-- اختر المادة --</option>
+            <optgroup label="🔤 اللغة العربية">
+              <option value="arabic-listening">اللغة العربية - الاستماع</option>
+              <option value="arabic-reading">اللغة العربية - القراءة</option>
+              <option value="arabic-poetry">اللغة العربية - النص الشعري</option>
+              <option value="arabic-grammar">اللغة العربية - القواعد</option>
+              <option value="arabic-spelling">اللغة العربية - الإملاء</option>
+              <option value="arabic-expression">اللغة العربية - التعبير</option>
+              <option value="arabic-calligraphy">اللغة العربية - الخط</option>
+            </optgroup>
+            <optgroup label="☪️ العلوم الشرعية">
+              <option>التربية الإسلامية</option><option>القرآن الكريم والتجويد</option>
+              <option>الفقه والتشريع</option><option>التفسير والحديث</option>
+            </optgroup>
+            <optgroup label="🔢 العلوم والرياضيات">
+              <option>الرياضيات</option><option>العلوم الطبيعية</option>
+              <option>الفيزياء</option><option>الكيمياء</option><option>الأحياء</option>
+            </optgroup>
+            <optgroup label="🌍 الدراسات الاجتماعية">
+              <option>التاريخ</option><option>الجغرافيا</option><option>التربية الوطنية</option>
+            </optgroup>
+            <optgroup label="🌐 اللغات الأجنبية">
+              <option>اللغة الإنجليزية</option><option>اللغة الفرنسية</option>
+            </optgroup>
+            <optgroup label="💻 أخرى">
+              <option>تقنية المعلومات</option><option>التربية الفنية</option>
+              <option>التربية البدنية</option><option>أخرى</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="fld"><label>🎓 الصف الدراسي</label>
+          <select id="f-grade" onchange="prog()">
+            <option value="">-- اختر الصف --</option>
+            <optgroup label="🏫 المرحلة الابتدائية">
+              <option>الصف الأول الابتدائي</option>
+              <option>الصف الثاني الابتدائي</option>
+              <option>الصف الثالث الابتدائي</option>
+              <option>الصف الرابع الابتدائي</option>
+              <option>الصف الخامس الابتدائي</option>
+              <option>الصف السادس الابتدائي</option>
+            </optgroup>
+            <optgroup label="🏫 المرحلة المتوسطة">
+              <option>الصف السابع المتوسط</option>
+              <option>الصف الثامن المتوسط</option>
+              <option>الصف التاسع المتوسط</option>
+              <option>الصف العاشر المتوسط</option>
+            </optgroup>
+            <optgroup label="🏫 المرحلة الثانوية">
+              <option>الصف الأول الثانوي - علمي</option>
+              <option>الصف الأول الثانوي - أدبي</option>
+              <option>الصف الثاني الثانوي - علمي</option>
+              <option>الصف الثاني الثانوي - أدبي</option>
+              <option>الصف الثالث الثانوي - علمي</option>
+              <option>الصف الثالث الثانوي - أدبي</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="fld"><label>📝 عنوان الدرس</label><input type="text" id="f-title" placeholder="عنوان الدرس" oninput="prog()"></div>
+        <div class="fld"><label>📅 التاريخ</label><input type="date" id="f-date" oninput="prog()"></div>
+        <div class="fld"><label>📚 الفصل الدراسي</label>
+          <select id="f-semester" onchange="prog()" style="width:100%;font-family:Tajawal,sans-serif;font-size:13px;padding:8px 11px;border:1.5px solid var(--bd);border-radius:8px;color:var(--tx);background:var(--card)">
+            <option value="الفصل الأول">📘 الفصل الأول</option>
+            <option value="الفصل الثاني">📗 الفصل الثاني</option>
+          </select></div>
+        <div class="fld"><label>⏱️ مدة الحصة</label>
+          <select id="f-dur"><option>40 دقيقة</option><option>45 دقيقة</option><option selected>50 دقيقة</option><option>55 دقيقة</option><option>60 دقيقة</option></select>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- OBJECTIVES -->
+  <div class="card">
+    <div class="ch gn" onclick="tog(this)"><div class="ci">🎯</div><div class="ct"><h3>أهداف الدرس</h3><p>المعرفية والمهارية والوجدانية</p></div><button class="ctg">▼</button></div>
+    <div class="cb">
+      <div class="ol" id="objlist">
+        <div class="or2"><span class="bdg cog">معرفي</span><input type="text" placeholder="أن يتعرف الطالب على..." oninput="prog()"><button class="xb" onclick="delrow(this)">✕</button></div>
+        <div class="or2"><span class="bdg skl">مهاري</span><input type="text" placeholder="أن يطبق الطالب..." oninput="prog()"><button class="xb" onclick="delrow(this)">✕</button></div>
+        <div class="or2"><span class="bdg aff">وجداني</span><input type="text" placeholder="أن يقدّر الطالب..." oninput="prog()"><button class="xb" onclick="delrow(this)">✕</button></div>
+      </div>
+      <div style="display:flex;gap:7px;margin-top:9px;flex-wrap:wrap">
+        <button class="addb" onclick="addObj('cog','معرفي')">+ معرفي</button>
+        <button class="addb" onclick="addObj('skl','مهاري')">+ مهاري</button>
+        <button class="addb" onclick="addObj('aff','وجداني')">+ وجداني</button>
+      </div>
+    </div>
+  </div>
+  <!-- MATERIALS -->
+  <div class="card">
+    <div class="ch gd" onclick="tog(this)"><div class="ci">🛠️</div><div class="ct"><h3>المتطلبات والوسائل</h3><p>المتطلبات السابقة والأدوات والمرفقات</p></div><button class="ctg">▼</button></div>
+    <div class="cb">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:14px">
+        <div><label style="display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:4px">📋 المتطلبات السابقة</label><textarea id="f-prereq" oninput="prog()"></textarea></div>
+        <div><label style="display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:4px">🖥️ الوسائل والأدوات</label><textarea id="f-tools" oninput="prog()"></textarea></div>
+      </div>
+      <label style="display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:7px">🖼️ الصور والمرفقات</label>
+      <div class="ag" id="attachgrid"></div>
+      <label class="aadd"><input type="file" accept="image/*" multiple style="display:none" onchange="addFiles(this)">📎 اضغط لإضافة صور</label>
+    </div>
+  </div>
+  <!-- INTRO -->
+  <div class="card">
+    <div class="ch tl" onclick="tog(this)"><div class="ci">🌅</div><div class="ct"><h3>التمهيد للدرس</h3><p>استثارة الدافعية وربط الخبرات</p></div><button class="ctg">▼</button></div>
+    <div class="cb">
+      <label style="display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:4px">🔗 أسلوب التمهيد</label>
+      <select id="f-introsel" style="width:100%;margin-bottom:10px" onchange="prog()">
+        <option value="">-- اختر أسلوب التمهيد --</option>
+        <option>طرح سؤال تحفيزي</option><option>قصة أو موقف</option>
+        <option>مراجعة الدرس السابق</option><option>عرض صورة أو مقطع مرئي</option>
+        <option>نشاط تمهيدي</option><option>عصف ذهني</option><option>خريطة مفاهيمية</option>
+      </select>
+      <textarea id="f-intro" placeholder="اكتب تفاصيل التمهيد هنا..." style="min-height:115px" oninput="prog()"></textarea>
+    </div>
+  </div>
+  <!-- PRESENTATION -->
+  <div class="card">
+    <div class="ch bl" onclick="tog(this)"><div class="ci">📊</div><div class="ct"><h3>عرض الدرس</h3><p>خطوات التدريس والاستراتيجيات</p></div><button class="ctg">▼</button></div>
+    <div class="cb">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:13px">
+        <div><label style="display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:4px">🎨 استراتيجية التدريس</label>
+          <select id="f-strat" style="width:100%" onchange="prog()">
+            <option value="">-- اختر الاستراتيجية --</option>
+            <option>التعلم التعاوني</option><option>حل المشكلات</option>
+            <option>الاستقصاء والاكتشاف</option><option>العصف الذهني</option>
+            <option>لعب الأدوار</option><option>المناقشة والحوار</option>
+            <option>التعلم بالمشروع</option><option>الخرائط الذهنية</option>
+            <option>الإلقاء والشرح</option><option>التعليم المتمايز</option>
+          </select></div>
+        <div><label style="display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:4px">👥 أسلوب التنظيم</label>
+          <select id="f-org" style="width:100%">
+            <option>فردي</option><option>ثنائي</option><option>مجموعات صغيرة</option><option>صفي كامل</option><option>متنوع</option>
+          </select></div>
+      </div>
+      <div style="font-size:11px;font-weight:700;color:var(--pr);margin-bottom:7px">📋 خطوات الدرس التفصيلية</div>
+      <div id="stepslist">
+        <div class="sr"><div class="sn">١</div><textarea placeholder="الخطوة الأولى: ..." oninput="prog()"></textarea></div>
+        <div class="sr"><div class="sn">٢</div><textarea placeholder="الخطوة الثانية: ..." oninput="prog()"></textarea></div>
+        <div class="sr"><div class="sn">٣</div><textarea placeholder="الخطوة الثالثة: ..." oninput="prog()"></textarea></div>
+      </div>
+      <button class="addb" onclick="addStep()">+ إضافة خطوة</button>
+    </div>
+  </div>
+  <!-- FORMATIVE -->
+  <div class="card">
+    <div class="ch pu" onclick="tog(this)"><div class="ci">🔍</div><div class="ct"><h3>التقويم التكويني</h3><p>تقييم مستمر أثناء الدرس</p></div><button class="ctg">▼</button></div>
+    <div class="cb">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:11px;margin-bottom:10px">
+        <div><label style="display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:4px">📌 أداة التقويم</label>
+          <select id="f-formtool" style="width:100%" onchange="prog()">
+            <option value="">-- اختر الأداة --</option>
+            <option>أسئلة شفهية</option><option>ورقة عمل</option><option>بطاقة خروج</option>
+            <option>ملاحظة المعلم</option><option>قائمة رصد</option><option>مقياس تقدير</option>
+          </select></div>
+        <div><label style="display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:4px">⏰ توقيت التطبيق</label>
+          <select id="f-formtime" style="width:100%">
+            <option>بعد كل فقرة</option><option>في منتصف الدرس</option><option>أثناء الدرس</option><option>متواصل</option>
+          </select></div>
+      </div>
+      <textarea id="f-formtext" placeholder="وصف التقويم التكويني..." oninput="prog()"></textarea>
+    </div>
+  </div>
+  <!-- SUMMATIVE -->
+  <div class="card">
+    <div class="ch rd" onclick="tog(this)"><div class="ci">✅</div><div class="ct"><h3>التقويم الختامي</h3><p>تقييم تحقق الأهداف</p></div><button class="ctg">▼</button></div>
+    <div class="cb">
+      <label style="display:block;font-size:11px;font-weight:700;color:var(--pr);margin-bottom:4px">📝 نوع التقويم</label>
+      <select id="f-sumtype" style="width:100%;margin-bottom:10px" onchange="prog()">
+        <option value="">-- اختر نوع التقويم --</option>
+        <option>اختبار قصير</option><option>أسئلة مراجعة</option><option>نشاط تطبيقي</option>
+        <option>مشروع صغير</option><option>عرض أمام الفصل</option><option>واجب منزلي</option>
+      </select>
+      <textarea id="f-sumtext" placeholder="وصف التقويم الختامي..." oninput="prog()"></textarea>
+      <div style="margin-top:13px;padding:13px;background:var(--bg);border-radius:9px">
+        <div style="font-size:11px;font-weight:700;color:var(--pr);margin-bottom:9px">📊 تقييم مستوى الطلاب</div>
+        <div class="rr"><span>تحقق الأهداف المعرفية</span><div class="sts" id="rs-cog">
+          <div class="st" onclick="rate('cog',1)">١</div><div class="st" onclick="rate('cog',2)">٢</div>
+          <div class="st" onclick="rate('cog',3)">٣</div><div class="st" onclick="rate('cog',4)">٤</div><div class="st" onclick="rate('cog',5)">٥</div></div></div>
+        <div class="rr"><span>تحقق الأهداف المهارية</span><div class="sts" id="rs-skl">
+          <div class="st" onclick="rate('skl',1)">١</div><div class="st" onclick="rate('skl',2)">٢</div>
+          <div class="st" onclick="rate('skl',3)">٣</div><div class="st" onclick="rate('skl',4)">٤</div><div class="st" onclick="rate('skl',5)">٥</div></div></div>
+        <div class="rr"><span>مستوى مشاركة الطلاب</span><div class="sts" id="rs-par">
+          <div class="st" onclick="rate('par',1)">١</div><div class="st" onclick="rate('par',2)">٢</div>
+          <div class="st" onclick="rate('par',3)">٣</div><div class="st" onclick="rate('par',4)">٤</div><div class="st" onclick="rate('par',5)">٥</div></div></div>
+      </div>
+    </div>
+  </div>
+  <!-- NOTES -->
+  <div class="card">
+    <div class="ch or" onclick="tog(this)"><div class="ci">📓</div><div class="ct"><h3>الملاحظات والتأمل المهني</h3><p>الواجبات والإثراء والعلاج</p></div><button class="ctg">▼</button></div>
+    <div class="cb">
+      <div class="ng">
+        <div class="nb"><label>📚 الواجب المنزلي</label><textarea id="f-hw" oninput="prog()"></textarea></div>
+        <div class="nb"><label>🌟 أنشطة الإثراء</label><textarea id="f-enrich" oninput="prog()"></textarea></div>
+        <div class="nb"><label>🩹 أنشطة العلاج</label><textarea id="f-rem" oninput="prog()"></textarea></div>
+        <div class="nb"><label>💡 ملاحظات التحسين</label><textarea id="f-notes" oninput="prog()"></textarea></div>
+      </div>
+      <textarea id="f-reflect" style="display:none"></textarea>
+    </div>
+  </div>
+  <div class="acts">
+    <button class="btn bp" onclick="triggerAutoGen()" style="font-size:14px">⚡ توليد تلقائي كامل</button>
+    <button class="btn bg" onclick="saveLesson()">💾 حفظ</button>
+    <button class="btn" style="background:linear-gradient(135deg,#1a3a5c,#2d6a9f);color:#fff;border:none;font-size:14px;padding:12px 20px" onclick="doPrint()">🖨️ طباعة HP</button>
+    <button class="btn" style="background:#25d366;color:#fff" onclick="shareWhatsApp()">📤 واتساب</button>
+    <button class="btn" style="background:linear-gradient(135deg,#6d28d9,#7c3aed);color:#fff" onclick="genQuizQuestions()">📝 أسئلة</button>
+    <button class="btn" style="background:linear-gradient(135deg,#b45309,#d97706);color:#fff" onclick="suggestActivities()">🎮 أنشطة</button>
+    <button class="btn" style="background:linear-gradient(135deg,#1e40af,#3b82f6);color:#fff" onclick="translatePlan()">🌐 ترجمة</button>
+    <button class="btn" style="background:linear-gradient(135deg,#0d6b5a,#0f9b7e);color:#fff" onclick="openChat()">💬 AI</button>
+    <button class="btn" style="background:linear-gradient(135deg,#c5962b,#f0c94a);color:#1a1a2e" onclick="openTemplates()">📄 نماذج</button>
+    <button class="btn" style="background:linear-gradient(135deg,#0f3460,#1a5c3a);color:#fff" onclick="genWeeklyPlan()">📅 أسبوعي</button>
+    <button class="btn bd2" onclick="clearAll()">🔄 تعيين</button>
+  </div>
+</div></div>
+
+<div id="tab-saved" class="pnl"><div class="wrap">
+  <div style="display:flex;gap:7px;margin-bottom:12px">
+    <input type="text" id="search-inp" placeholder="🔍 ابحث في الدروس..." oninput="searchLessons(this.value)" style="flex:1">
+    <button class="btn bp" onclick="searchLessons(document.getElementById('search-inp').value)" style="padding:8px 14px;font-size:12px">بحث</button>
+    <button class="btn bg" onclick="genMonthlyReport()" style="padding:8px 14px;font-size:12px">📊 تقرير</button>
+  </div>
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+    <h2 style="font-family:'Amiri',serif;color:var(--pr);font-size:20px">💾 الدروس المحفوظة</h2>
+    <span id="saved-count" style="background:var(--pr);color:#fff;padding:3px 11px;border-radius:20px;font-size:12px;font-weight:700">0 درس</span>
+  </div>
+  <div class="sl2" id="slist"><div style="text-align:center;padding:50px;color:var(--mu)"><div style="font-size:44px;margin-bottom:10px">📂</div><p>لا توجد دروس محفوظة بعد</p></div></div>
+</div></div>
+
+<div id="tab-stats" class="pnl"><div class="wrap">
+  <h2 style="font-family:'Amiri',serif;color:var(--pr);font-size:20px;margin-bottom:18px">📊 الإحصائيات</h2>
+  <div class="sg">
+    <div class="sc"><div class="si">📚</div><div class="sv" id="st-total">0</div><div class="sl">إجمالي الدروس</div></div>
+    <div class="sc"><div class="si">📖</div><div class="sv" id="st-subj">0</div><div class="sl">مواد مختلفة</div></div>
+    <div class="sc"><div class="si">🎯</div><div class="sv" id="st-obj">0</div><div class="sl">هدف تعليمي</div></div>
+    <div class="sc"><div class="si">⭐</div><div class="sv" id="st-avg">-</div><div class="sl">متوسط التقييم</div></div>
+  </div>
+  <div class="card">
+    <div class="ch bl" onclick="tog(this)"><div class="ci">📈</div><div class="ct"><h3>الدروس حسب المادة</h3><p>توزيع الخطط</p></div><button class="ctg">▼</button></div>
+    <div class="cb" id="chart-wrap"><div style="text-align:center;padding:22px;color:var(--mu)">لا توجد بيانات كافية</div></div>
+  </div>
+  <div class="card">
+    <div class="ch gn" onclick="tog(this)"><div class="ci">🗓️</div><div class="ct"><h3>آخر الدروس</h3><p>سجل الخطط الحديثة</p></div><button class="ctg">▼</button></div>
+    <div class="cb" id="recent-wrap"><div style="text-align:center;padding:16px;color:var(--mu)">لا توجد دروس</div></div>
+  </div>
+</div></div>
+
+<div id="tab-remind" class="pnl"><div class="wrap">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+    <h2 style="font-family:'Amiri',serif;color:var(--pr);font-size:20px">🔔 التذكيرات والمهام</h2>
+    <button class="btn bp" onclick="addRem()" style="padding:8px 14px;font-size:12px">+ تذكير</button>
+  </div>
+  <div class="card">
+    <div class="ch gd" onclick="tog(this)"><div class="ci">⏰</div><div class="ct"><h3>تذكيرات الدروس</h3><p>تنبيهات لمواعيد الحصص</p></div><button class="ctg">▼</button></div>
+    <div class="cb"><div id="rem-list"><div style="text-align:center;padding:25px;color:var(--mu)"><div style="font-size:36px;margin-bottom:8px">🔕</div><p>لا توجد تذكيرات</p></div></div></div>
+  </div>
+  <div class="card">
+    <div class="ch pu" onclick="tog(this)"><div class="ci">📋</div><div class="ct"><h3>المهام اليومية</h3><p>قائمة مهام التحضير</p></div><button class="ctg">▼</button></div>
+    <div class="cb">
+      <div id="task-list" style="margin-bottom:9px"></div>
+      <div style="display:flex;gap:7px">
+        <input type="text" id="new-task" placeholder="أضف مهمة جديدة..." style="flex:1" onkeydown="if(event.key==='Enter')addTask()">
+        <button class="btn bp" onclick="addTask()" style="padding:8px 14px;font-size:12px">إضافة</button>
+      </div>
+    </div>
+  </div>
+</div></div>
+
+<!-- AI MODAL -->
+<div class="ov" id="ai-ov">
+  <div class="mb">
+    <div class="mh"><h2>✨ مساعد الذكاء الاصطناعي</h2><button class="mc" onclick="closeAI()">✕</button></div>
+    <div style="background:var(--bg);border-radius:9px;padding:13px;margin-bottom:12px">
+      <p style="font-size:11px;color:var(--mu);margin-bottom:7px">صف الدرس وسيقترح المساعد المحتوى كاملاً:</p>
+      <textarea id="ai-prompt" placeholder="مثال: درس في اللغة العربية عن الفعل المضارع للصف الثامن المتوسط..." style="min-height:85px"></textarea>
+    </div>
+    <button class="btn bp" onclick="callAI()" style="width:100%;justify-content:center">🚀 <span id="ai-btntxt">توليد المحتوى</span></button>
+    <div id="ai-res" style="display:none;margin-top:12px;padding:13px;background:rgba(45,106,159,.06);border-radius:9px;border:1.5px solid rgba(45,106,159,.18);max-height:340px;overflow-y:auto"><div id="ai-out"></div></div>
+    <div id="ai-apply" style="display:none;margin-top:11px">
+      <button class="btn bg" onclick="applyAI()" style="width:100%;justify-content:center;font-size:14px">✍️ تطبيق على خطة الدرس مباشرة</button>
+      <p style="text-align:center;font-size:10px;color:var(--mu);margin-top:5px">سيتم ملء جميع الحقول تلقائياً</p>
+    </div>
+  </div>
+</div>
+
+<!-- THEME MODAL -->
+<div class="ov" id="th-ov">
+  <div class="mb" style="max-width:380px">
+    <div class="mh"><h2>🎨 اختر الثيم</h2><button class="mc" onclick="closeTheme()">✕</button></div>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:12px">اختر اللون المناسب لك:</p>
+    <div class="thdots">
+      <div class="thd on" style="background:linear-gradient(135deg,#1a3a5c,#c5962b)" onclick="setTheme('',this)"></div>
+      <div class="thd" style="background:linear-gradient(135deg,#0f172a,#7eb8f7)" onclick="setTheme('dark',this)">🌙</div>
+      <div class="thd" style="background:linear-gradient(135deg,#1a5c3a,#c5962b)" onclick="setTheme('tg',this)"></div>
+      <div class="thd" style="background:linear-gradient(135deg,#4a1a7c,#c5962b)" onclick="setTheme('tp',this)"></div>
+      <div class="thd" style="background:linear-gradient(135deg,#7c1a3a,#c5962b)" onclick="setTheme('tr',this)"></div>
+    </div>
+    <div style="margin-top:14px;padding:12px;background:var(--bg);border-radius:9px">
+      <label style="display:flex;align-items:center;justify-content:space-between;cursor:pointer">
+        <span style="font-size:13px;font-weight:600;color:var(--pr)">🌙 الوضع الليلي</span>
+        <input type="checkbox" id="darktog" onchange="toggleDarkCB(this.checked)" style="width:18px;height:18px;cursor:pointer">
+      </label>
+    </div>
+  </div>
+</div>
+
+<button class="bell" onclick="showTab('remind',document.querySelectorAll('.nt')[3])">🔔<span class="bb" id="bellbadge" style="display:none">0</span></button>
+<div class="toast" id="toast"><span id="t-ico">✅</span><span id="t-msg">تم</span></div>
+
+<script>
+var AN=['٠','١','٢','٣','٤','٥','٦','٧','٨','٩'];
+var sc=3,aiData=null,files=[];
+var lessons=[],reminders=[],tasks=[];
+try{lessons=JSON.parse(localStorage.getItem('lp_lessons')||'[]')}catch(e){lessons=[]}
+try{reminders=JSON.parse(localStorage.getItem('lp_rems')||'[]')}catch(e){reminders=[]}
+try{tasks=JSON.parse(localStorage.getItem('lp_tasks')||'[]')}catch(e){tasks=[]}
+var curTheme=localStorage.getItem('lp_theme')||'';
+var isDark=localStorage.getItem('lp_dark')==='1';
+
+window.onload=function(){
+  document.getElementById('f-date').valueAsDate=new Date();
+  applyTheme(curTheme,isDark);
+  renderSaved();renderStats();renderRems();renderTasks();prog();updateBell();
+  // استعادة المعلم المحفوظ
+  var savedTeacher=localStorage.getItem('lp_teacher');
+  if(savedTeacher){var te=document.getElementById('f-teacher');if(te&&te.tagName==='SELECT'){for(var i=0;i<te.options.length;i++){if(te.options[i].value===savedTeacher){te.selectedIndex=i;break;}}}else if(te)te.value=savedTeacher;}
+  // استعادة المدرسة المحفوظة
+  var savedSchool=localStorage.getItem('lp_school');
+  if(savedSchool){var se=document.getElementById('f-school');if(se&&se.tagName==='SELECT'){for(var i=0;i<se.options.length;i++){if(se.options[i].value===savedSchool){se.selectedIndex=i;break;}}}}
+  // تشغيل الساعة فوراً
+  updateLiveClock();
+  setTimeout(checkFreeKeys, 500);
+  setTimeout(checkFreeKeys, 500);
+  hookAutoGen();
+  timerReset();
+  calcQuality();
+};
+
+function showTab(n,btn){
+  document.querySelectorAll('.pnl').forEach(function(p){p.classList.remove('on')});
+  document.querySelectorAll('.nt').forEach(function(t){t.classList.remove('on')});
+  document.getElementById('tab-'+n).classList.add('on');
+  if(btn)btn.classList.add('on');
+  if(n==='stats')renderStats();
+  if(n==='saved')renderSaved();
+}
+
+function tog(h){
+  var b=h.nextElementSibling,t=h.querySelector('.ctg');
+  b.classList.toggle('h');t.textContent=b.classList.contains('h')?'▶':'▼';
+}
+
+function prog(){
+  var els=document.querySelectorAll('#tab-plan input[type=text],#tab-plan input[type=date],#tab-plan select,#tab-plan textarea');
+  var f=0;
+  els.forEach(function(e){if(e.value&&e.value.indexOf('-- اختر')<0)f++;});
+  var p=Math.min(100,Math.round(f/Math.max(els.length,1)*100));
+  document.getElementById('pbar').style.width=p+'%';
+  document.getElementById('ptxt').textContent=p+'%';
+}
+
+function toast(msg,ico){
+  ico=ico||'✅';
+  var t=document.getElementById('toast');
+  document.getElementById('t-msg').textContent=msg;
+  document.getElementById('t-ico').textContent=ico;
+  t.classList.add('show');
+  setTimeout(function(){t.classList.remove('show');},3000);
+}
+
+function delrow(btn){btn.closest('.or2').remove();prog();}
+function addObj(cls,lbl){
+  var d=document.createElement('div');d.className='or2';
+  d.innerHTML='<span class="bdg '+cls+'">'+lbl+'</span><input type="text" placeholder="" oninput="prog()"><button class="xb" onclick="delrow(this)">✕</button>';
+  document.getElementById('objlist').appendChild(d);d.querySelector('input').focus();prog();
+}
+
+function an(n){return String(n).split('').map(function(d){return AN[+d]||d;}).join('');}
+function addStep(){
+  sc++;
+  var d=document.createElement('div');d.className='sr';
+  d.innerHTML='<div class="sn">'+an(sc)+'</div><textarea placeholder="الخطوة '+an(sc)+'..." oninput="prog()"></textarea>';
+  document.getElementById('stepslist').appendChild(d);d.querySelector('textarea').focus();
+}
+
+function rate(g,v){
+  document.querySelectorAll('#rs-'+g+' .st').forEach(function(s,i){s.classList.toggle('on',i<v);});
+}
+
+function addFiles(inp){
+  Array.from(inp.files).forEach(function(f){
+    var r=new FileReader();
+    r.onload=function(e){files.push({id:Date.now()+Math.random(),src:e.target.result,name:f.name});renderFiles();};
+    r.readAsDataURL(f);
+  });
+  inp.value='';
+}
+function renderFiles(){
+  document.getElementById('attachgrid').innerHTML=files.map(function(f){
+    return '<div class="ai2"><img src="'+f.src+'" title="'+f.name+'"><button class="adl" onclick="delFile(\''+f.id+'\')">✕</button></div>';
+  }).join('');
+}
+function delFile(id){files=files.filter(function(f){return f.id!=id;});renderFiles();}
+
+function collect(){
+  var objs=[];
+  document.querySelectorAll('#objlist .or2').forEach(function(r){
+    var cls=r.querySelector('.bdg').className.split(' ')[1];
+    var val=r.querySelector('input').value;
+    if(val)objs.push({type:cls,text:val});
+  });
+  var steps=[];
+  document.querySelectorAll('#stepslist textarea').forEach(function(t){if(t.value)steps.push(t.value);});
+  var ratings={};
+  ['cog','skl','par'].forEach(function(g){ratings[g]=document.querySelectorAll('#rs-'+g+' .st.on').length;});
+  function gv(id){var el=document.getElementById(id);return el?el.value:'';}
+  return{
+    id:Date.now(),savedAt:new Date().toLocaleDateString('ar-SA'),
+    school:gv('f-school'),ministry:gv('f-ministry'),teacher:gv('f-teacher'),semester:gv('f-semester'),subject:gv('f-subject'),grade:gv('f-grade'),
+    title:gv('f-title'),date:gv('f-date'),duration:gv('f-dur'),
+    prereq:gv('f-prereq'),tools:gv('f-tools'),introsel:gv('f-introsel'),intro:gv('f-intro'),
+    strat:gv('f-strat'),org:gv('f-org'),formtool:gv('f-formtool'),formtime:gv('f-formtime'),formtext:gv('f-formtext'),
+    sumtype:gv('f-sumtype'),sumtext:gv('f-sumtext'),hw:gv('f-hw'),enrich:gv('f-enrich'),
+    rem:gv('f-rem'),notes:gv('f-notes'),reflect:gv('f-reflect'),
+    objs:objs,steps:steps,ratings:ratings
+  };
+}
+
+function saveLesson(){
+  var d=collect();
+  if(!d.title&&!d.subject){toast('أدخل عنوان الدرس أو المادة أولاً','⚠️');return;}
+  var idx=lessons.findIndex(function(l){return l.title===d.title&&l.date===d.date;});
+  if(idx>-1)lessons[idx]=d;else lessons.unshift(d);
+  localStorage.setItem('lp_lessons',JSON.stringify(lessons));
+  renderSaved();renderStats();toast('تم حفظ الخطة 💾');
+}
+
+function loadLesson(id){
+  var d=lessons.find(function(l){return l.id===id;});if(!d)return;
+  function sv(id,val){var el=document.getElementById(id);if(el)el.value=val||'';}
+  sv('f-teacher',d.teacher);sv('f-subject',d.subject);sv('f-grade',d.grade);
+  sv('f-title',d.title);sv('f-date',d.date);sv('f-dur',d.duration);
+  sv('f-prereq',d.prereq);sv('f-tools',d.tools);sv('f-introsel',d.introsel);sv('f-intro',d.intro);
+  sv('f-strat',d.strat);sv('f-org',d.org);sv('f-formtool',d.formtool);sv('f-formtime',d.formtime);sv('f-formtext',d.formtext);
+  sv('f-sumtype',d.sumtype);sv('f-sumtext',d.sumtext);sv('f-hw',d.hw);sv('f-enrich',d.enrich);
+  sv('f-rem',d.rem);sv('f-notes',d.notes);sv('f-reflect',d.reflect);
+  document.getElementById('objlist').innerHTML='';
+  var lmap={cog:'معرفي',skl:'مهاري',aff:'وجداني'};
+  (d.objs||[]).forEach(function(o){
+    var div=document.createElement('div');div.className='or2';
+    div.innerHTML='<span class="bdg '+o.type+'">'+(lmap[o.type]||o.type)+'</span><input type="text" value="'+o.text.replace(/"/g,'&quot;')+'" oninput="prog()"><button class="xb" onclick="delrow(this)">✕</button>';
+    document.getElementById('objlist').appendChild(div);
+  });
+  document.getElementById('stepslist').innerHTML='';sc=0;
+  (d.steps||[]).forEach(function(s){
+    sc++;var div=document.createElement('div');div.className='sr';
+    div.innerHTML='<div class="sn">'+an(sc)+'</div><textarea oninput="prog()">'+s.replace(/</g,'&lt;')+'</textarea>';
+    document.getElementById('stepslist').appendChild(div);
+  });
+  if(d.ratings)Object.keys(d.ratings).forEach(function(g){
+    document.querySelectorAll('#rs-'+g+' .st').forEach(function(s,i){s.classList.toggle('on',i<d.ratings[g]);});
+  });
+  document.querySelectorAll('.cb').forEach(function(b){b.classList.remove('h');});
+  document.querySelectorAll('.ctg').forEach(function(b){b.textContent='▼';});
+  showTab('plan',null);
+  document.querySelectorAll('.nt').forEach(function(t){t.classList.remove('on');});
+  document.querySelector('.nt').classList.add('on');
+  prog();toast('تم تحميل الخطة 📂');
+}
+
+function delLesson(id,e){
+  e.stopPropagation();
+  if(!confirm('حذف هذه الخطة؟'))return;
+  lessons=lessons.filter(function(l){return l.id!==id;});
+  localStorage.setItem('lp_lessons',JSON.stringify(lessons));
+  renderSaved();renderStats();toast('تم الحذف','🗑️');
+}
+
+function renderSaved(){
+  var el=document.getElementById('slist');
+  document.getElementById('saved-count').textContent=lessons.length+' درس';
+  if(!lessons.length){el.innerHTML='<div style="text-align:center;padding:50px;color:var(--mu)"><div style="font-size:44px;margin-bottom:10px">📂</div><p>لا توجد دروس محفوظة بعد</p></div>';return;}
+  el.innerHTML=lessons.map(function(l){
+    return '<div class="si2" onclick="loadLesson('+l.id+')">'
+      +'<div style="font-size:22px">'+(l.semester&&l.semester.indexOf('ثاني')>=0?'📗':'📘')+'</div>'
+      +'<div class="si2-i"><h4>'+(l.title||'درس بدون عنوان')+'</h4>'
+      +'<p>'+(l.subject||'-')+' | '+(l.grade||'-')+' | '+(l.semester||'الفصل الأول')+' | '+(l.date||l.savedAt)+'</p></div>'
+      +'<div class="si2-a">'
+      +'<button class="tb" onclick="event.stopPropagation();loadLesson('+l.id+')" style="font-size:11px">📂</button>'
+      +'<button class="tb" onclick="delLesson('+l.id+',event)" style="font-size:11px;color:#dc2626">🗑️</button>'
+      +'</div></div>';
+  }).join('');
+}
+
+function renderStats(){
+  document.getElementById('st-total').textContent=lessons.length;
+  var subjs=new Set(lessons.map(function(l){return l.subject;}).filter(Boolean));
+  document.getElementById('st-subj').textContent=subjs.size;
+  var objs=lessons.reduce(function(a,l){return a+(l.objs||[]).length;},0);
+  document.getElementById('st-obj').textContent=objs;
+  var rv=lessons.flatMap(function(l){return l.ratings?Object.values(l.ratings):[];}).filter(function(v){return v>0;});
+  document.getElementById('st-avg').textContent=rv.length?(rv.reduce(function(a,b){return a+b;},0)/rv.length).toFixed(1):'-';
+  var sc2={};
+  lessons.forEach(function(l){if(l.subject)sc2[l.subject]=(sc2[l.subject]||0)+1;});
+  var cw=document.getElementById('chart-wrap');
+  if(!Object.keys(sc2).length){cw.innerHTML='<div style="text-align:center;padding:22px;color:var(--mu)">لا توجد بيانات كافية</div>';return;}
+  var mx=Math.max.apply(null,Object.values(sc2));
+  var cls2=['#1a3a5c','#2d6a9f','#c5962b','#2e7d52','#7c3abf','#bf3a6a'];
+  cw.innerHTML=Object.entries(sc2).sort(function(a,b){return b[1]-a[1];}).map(function(e,i){
+    var lbl=e[0].length>15?e[0].substring(0,15)+'..':e[0];
+    return '<div class="br"><span class="brl">'+lbl+'</span><div class="brt"><div class="brf" style="width:'+(e[1]/mx*100)+'%;background:'+cls2[i%cls2.length]+'"></div></div><span class="brc">'+e[1]+'</span></div>';
+  }).join('');
+  var rw=document.getElementById('recent-wrap');
+  if(!lessons.length){rw.innerHTML='<div style="text-align:center;padding:16px;color:var(--mu)">لا توجد دروس</div>';return;}
+  rw.innerHTML=lessons.slice(0,5).map(function(l){
+    return '<div style="display:flex;align-items:center;gap:9px;padding:8px 0;border-bottom:1px dashed var(--bd)">'
+      +'<span style="font-size:18px">📄</span><div style="flex:1"><div style="font-size:13px;font-weight:600">'+(l.title||'بدون عنوان')+'</div>'
+      +'<div style="font-size:11px;color:var(--mu)">'+(l.subject||'-')+' | '+l.savedAt+'</div></div>'
+      +'<button class="tb" onclick="loadLesson('+l.id+')" style="font-size:11px">تحميل</button></div>';
+  }).join('');
+}
+
+function addRem(){reminders.push({id:Date.now(),text:'',time:'08:00'});saveRems();renderRems();updateBell();}
+function saveRems(){localStorage.setItem('lp_rems',JSON.stringify(reminders));}
+function renderRems(){
+  var el=document.getElementById('rem-list');
+  if(!reminders.length){el.innerHTML='<div style="text-align:center;padding:25px;color:var(--mu)"><div style="font-size:36px;margin-bottom:8px">🔕</div><p>لا توجد تذكيرات</p></div>';return;}
+  el.innerHTML=reminders.map(function(r){
+    return '<div class="rrr"><span style="font-size:18px">🔔</span>'
+      +'<input type="text" value="'+r.text+'" placeholder="نص التذكير..." onchange="updRem('+r.id+',\'text\',this.value)">'
+      +'<input type="time" value="'+r.time+'" onchange="updRem('+r.id+',\'time\',this.value)">'
+      +'<button class="xb" onclick="delRem('+r.id+')">✕</button></div>';
+  }).join('');
+}
+function updRem(id,k,v){var r=reminders.find(function(r){return r.id===id;});if(r){r[k]=v;saveRems();}}
+function delRem(id){reminders=reminders.filter(function(r){return r.id!==id;});saveRems();renderRems();updateBell();}
+function updateBell(){var b=document.getElementById('bellbadge');if(reminders.length){b.style.display='flex';b.textContent=reminders.length;}else b.style.display='none';}
+
+function addTask(){
+  var inp=document.getElementById('new-task'),txt=inp.value.trim();
+  if(!txt)return;
+  tasks.push({id:Date.now(),text:txt,done:false});inp.value='';
+  saveTasks();renderTasks();
+}
+function saveTasks(){localStorage.setItem('lp_tasks',JSON.stringify(tasks));}
+function renderTasks(){
+  var el=document.getElementById('task-list');
+  if(!tasks.length){el.innerHTML='';return;}
+  el.innerHTML=tasks.map(function(t){
+    return '<div class="trow">'
+      +'<input type="checkbox" '+(t.done?'checked':'')+' onchange="togTask('+t.id+')" style="width:15px;height:15px;cursor:pointer">'
+      +'<span style="'+(t.done?'text-decoration:line-through;opacity:.5':'')+' flex:1">'+t.text+'</span>'
+      +'<button class="xb" onclick="delTask('+t.id+')">✕</button></div>';
+  }).join('');
+}
+function togTask(id){var t=tasks.find(function(t){return t.id===id;});if(t){t.done=!t.done;saveTasks();renderTasks();}}
+function delTask(id){tasks=tasks.filter(function(t){return t.id!==id;});saveTasks();renderTasks();}
+
+function openTheme(){document.getElementById('th-ov').classList.add('open');}
+function closeTheme(){document.getElementById('th-ov').classList.remove('open');}
+function setTheme(cls,dot){
+  applyTheme(cls,cls==='dark');
+  document.querySelectorAll('.thd').forEach(function(d){d.classList.remove('on');});
+  if(dot)dot.classList.add('on');
+  document.getElementById('darktog').checked=cls==='dark';
+  document.getElementById('dbtn').classList.toggle('on',cls==='dark');
+}
+function toggleDark(){applyTheme(isDark?'':'dark',!isDark);document.getElementById('dbtn').classList.toggle('on',!isDark);}
+function toggleDarkCB(v){applyTheme(v?'dark':'',v);}
+function applyTheme(cls,dark){
+  document.body.className='';
+  if(dark||cls==='dark'){document.body.classList.add('dark');isDark=true;curTheme='dark';}
+  else if(cls){document.body.classList.add(cls);isDark=false;curTheme=cls;}
+  else{isDark=false;curTheme='';}
+  localStorage.setItem('lp_theme',curTheme);
+  localStorage.setItem('lp_dark',isDark?'1':'0');
+}
+
+function clearAll(){
+  if(!confirm('إعادة تعيين جميع الحقول؟'))return;
+  document.querySelectorAll('#tab-plan input[type=text],#tab-plan textarea').forEach(function(e){e.value='';});
+  document.querySelectorAll('#tab-plan select').forEach(function(e){e.selectedIndex=0;});
+  document.querySelectorAll('.st.on').forEach(function(s){s.classList.remove('on');});
+  document.getElementById('f-date').valueAsDate=new Date();
+  files=[];renderFiles();sc=0;
+  document.getElementById('stepslist').innerHTML='';
+  [1,2,3].forEach(function(n){
+    sc++;var d=document.createElement('div');d.className='sr';
+    d.innerHTML='<div class="sn">'+an(sc)+'</div><textarea placeholder="الخطوة '+an(sc)+'..." oninput="prog()"></textarea>';
+    document.getElementById('stepslist').appendChild(d);
+  });
+  document.getElementById('objlist').innerHTML='';
+  [{c:'cog',l:'معرفي'},{c:'skl',l:'مهاري'},{c:'aff',l:'وجداني'}].forEach(function(o){
+    var d=document.createElement('div');d.className='or2';
+    d.innerHTML='<span class="bdg '+o.c+'">'+o.l+'</span><input type="text" oninput="prog()"><button class="xb" onclick="delrow(this)">✕</button>';
+    document.getElementById('objlist').appendChild(d);
+  });
+  prog();toast('تم إعادة التعيين 🔄');
+}
+
+// doPrint defined below
+
+function openAI(){
+  document.getElementById('ai-ov').classList.add('open');
+  var t=document.getElementById('f-title').value,s=document.getElementById('f-subject').value,g=document.getElementById('f-grade').value;
+  if(t||s)document.getElementById('ai-prompt').value=(s?'مادة '+s+' - ':'')+(t?'درس: '+t+' - ':'')+( g||'');
+}
+function closeAI(){document.getElementById('ai-ov').classList.remove('open');}
+
+async function callAI(){
+  var prompt=document.getElementById('ai-prompt').value.trim();
+  if(!prompt){toast('اكتب وصف الدرس أولاً','⚠️');return;}
+  var btntxt=document.getElementById('ai-btntxt');
+  btntxt.textContent='⏳ جاري التوليد...';
+  document.getElementById('ai-res').style.display='none';
+  document.getElementById('ai-apply').style.display='none';
+  aiData=null;
+  var sys='أنت خبير تربوي فلسطيني. أجب بـ JSON فقط لا غير: {"objectives_cognitive":["هدف1","هدف2","هدف3"],"objectives_skills":["هدف1","هدف2"],"objectives_affective":["هدف1"],"prerequisites":"نص","tools":"نص","intro_method":"نص","intro_text":"نص","strategy":"نص","organization":"نص","steps":["خطوة1","خطوة2","خطوة3","خطوة4","خطوة5"],"formative_tool":"نص","formative_time":"نص","formative_assessment":"نص","summative_type":"نص","summative_assessment":"نص","homework":"نص","enrichment":"نص","remedial":"نص"}';
+  try{
+    var raw = await callProvider([{role:'user',content:prompt}], sys, 1500);
+    raw = raw.replace(/```json\s*/gi,'').replace(/```\s*/g,'').trim();
+    aiData=JSON.parse(raw);
+    document.getElementById('ai-apply').style.display='block';
+    toast('تم التوليد بنجاح ✨');
+  }catch(e){
+    document.getElementById('ai-out').textContent='حدث خطأ، يرجى المحاولة مجدداً';
+    document.getElementById('ai-res').style.display='block';
+    toast('خطأ في التوليد','❌');
+  }
+  btntxt.textContent='توليد المحتوى';
+}
+
+function renderAIPreview(d){
+  var secs=[
+    {l:'🎯 الأهداف المعرفية',items:d.objectives_cognitive},
+    {l:'⚙️ الأهداف المهارية',items:d.objectives_skills},
+    {l:'💚 الأهداف الوجدانية',items:d.objectives_affective},
+    {l:'🌅 التمهيد',text:(d.intro_method?'['+d.intro_method+']\n':'')+d.intro_text},
+    {l:'📊 خطوات العرض',items:d.steps},
+    {l:'🔍 التقويم التكويني',text:d.formative_assessment},
+    {l:'✅ التقويم الختامي',text:d.summative_assessment},
+    {l:'📚 الواجب',text:d.homework},
+    {l:'🌟 الإثراء',text:d.enrichment},
+    {l:'🩹 العلاج',text:d.remedial}
+  ];
+  document.getElementById('ai-out').innerHTML=secs.map(function(s){
+    return '<div style="margin-bottom:9px"><div style="font-size:11px;font-weight:700;color:var(--pr);margin-bottom:3px">'+s.l+'</div>'
+      +(s.items?s.items.map(function(it){return '<div style="padding:3px 9px;background:var(--card);border-radius:5px;margin-bottom:3px;font-size:12px;border-right:3px solid var(--ac)">• '+it+'</div>';}).join('')
+        :'<div style="padding:6px 9px;background:var(--card);border-radius:5px;font-size:12px;white-space:pre-wrap">'+(s.text||'')+'</div>')+'</div>';
+  }).join('');
+  document.getElementById('ai-res').style.display='block';
+}
+
+function applyAI(){
+  if(!aiData)return;
+  var d=aiData;
+  document.getElementById('objlist').innerHTML='';
+  function fobj(arr,cls,lbl){(arr||[]).forEach(function(t){var div=document.createElement('div');div.className='or2';div.innerHTML='<span class="bdg '+cls+'">'+lbl+'</span><input type="text" value="'+t.replace(/"/g,'&quot;').replace(/</g,'&lt;')+'" oninput="prog()"><button class="xb" onclick="delrow(this)">✕</button>';document.getElementById('objlist').appendChild(div);});}
+  fobj(d.objectives_cognitive,'cog','معرفي');
+  fobj(d.objectives_skills,'skl','مهاري');
+  fobj(d.objectives_affective,'aff','وجداني');
+  function sv(id,val){var el=document.getElementById(id);if(el&&val)el.value=val;}
+  function ss(id,val){
+    var sel=document.getElementById(id);if(!sel||!val)return;
+    for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===val||sel.options[i].text.includes(val)){sel.selectedIndex=i;return;}}
+  }
+  sv('f-prereq',d.prerequisites); sv('f-tools',d.tools);
+  var subjVal=document.getElementById('f-subject').value;
+  if(typeof applySmartSelections==='function') applySmartSelections(subjVal);
+  if(d.intro_method) ss('f-introsel',d.intro_method);
+  sv('f-intro',d.intro_text);
+  if(d.strategy) ss('f-strat',d.strategy);
+  if(d.organization) ss('f-org',d.organization);
+  if(d.formative_tool) ss('f-formtool',d.formative_tool);
+  if(d.formative_time) ss('f-formtime',d.formative_time);
+  sv('f-formtext',d.formative_assessment);
+  if(d.summative_type) ss('f-sumtype',d.summative_type);
+  sv('f-sumtext',d.summative_assessment);
+  sv('f-hw',d.homework); sv('f-enrich',d.enrichment); sv('f-rem',d.remedial);
+  var sl=document.getElementById('stepslist');
+  if(sl){sl.innerHTML='';sc=0;(d.steps||[]).forEach(function(step){sc++;var div=document.createElement('div');div.className='sr';div.innerHTML='<div class="sn">'+an(sc)+'</div><textarea oninput="prog()">'+step.replace(/</g,'&lt;')+'</textarea>';sl.appendChild(div);});}
+  document.querySelectorAll('.cb').forEach(function(b){b.classList.remove('h');});
+  document.querySelectorAll('.ctg').forEach(function(b){b.textContent='▼';});
+  prog();closeAI();
+  toast('✅ تم تطبيق الخطة كاملة!');
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+
+document.querySelectorAll('.ov').forEach(function(ov){
+  ov.addEventListener('click',function(e){if(e.target===ov)ov.classList.remove('open');});
+});
+</script>
+
+<!-- مؤقت الحصة -->
+<div id="timer-bar" style="background:linear-gradient(135deg,#0f3460,#1a4a2e);color:#fff;padding:8px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-family:Tajawal,sans-serif">
+  <span style="font-size:11px;font-weight:700;white-space:nowrap">⏱️ مؤقت الحصة</span>
+  <span id="timer-display" style="font-size:22px;font-weight:900;color:#4ade80;min-width:70px;letter-spacing:1px">50:00</span>
+  <div style="flex:1;height:7px;background:rgba(255,255,255,.2);border-radius:4px;min-width:80px;overflow:hidden"><div id="timer-fill" style="height:100%;border-radius:4px;background:linear-gradient(90deg,#4ade80,#f0c94a);transition:width 1s linear;width:100%"></div></div>
+  <select id="timer-dur" onchange="timerSetDur()" style="padding:4px 8px;border-radius:7px;border:none;font-family:Tajawal,sans-serif;font-size:11px;background:rgba(255,255,255,.15);color:#fff;cursor:pointer">
+    <option value="40">40 د</option><option value="45">45 د</option><option value="50" selected>50 د</option><option value="55">55 د</option><option value="60">60 د</option>
+  </select>
+  <button id="timer-btn" onclick="timerToggle()" style="padding:5px 13px;background:#4ade80;color:#1a1a2e;border:none;border-radius:7px;font-family:Tajawal,sans-serif;font-size:12px;font-weight:700;cursor:pointer">▶ ابدأ</button>
+  <button onclick="timerReset()" style="padding:5px 10px;background:rgba(255,255,255,.15);color:#fff;border:none;border-radius:7px;font-family:Tajawal,sans-serif;font-size:12px;cursor:pointer">↺</button>
+</div>
+
+<!-- شريط التوليد التلقائي -->
+<div id="auto-banner" style="background:linear-gradient(135deg,#1a3a5c,#0d5a3a);color:#fff;padding:7px 16px;display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-family:Tajawal,sans-serif">
+  <span style="font-size:11px;background:linear-gradient(135deg,#c5962b,#f0c94a);color:#1a1a2e;padding:3px 10px;border-radius:20px;font-weight:700;white-space:nowrap">🤖 وضع ذكي</span>
+  <span id="auto-status" style="font-size:12px;flex:1">اختر المادة والصف واكتب العنوان — يتولد كل شيء تلقائياً ✨ Claude AI</span>
+  <button onclick="triggerAutoGen()" style="padding:5px 13px;background:linear-gradient(135deg,#c5962b,#f0c94a);border:none;border-radius:8px;font-family:Tajawal,sans-serif;font-size:12px;font-weight:700;color:#1a1a2e;cursor:pointer;white-space:nowrap">⚡ ابدأ الآن</button>
+</div>
+
+<!-- شاشة التوليد -->
+<div id="gen-overlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.7);z-index:9999;align-items:center;justify-content:center;flex-direction:column;gap:16px">
+  <div style="width:60px;height:60px;border:5px solid rgba(255,255,255,.2);border-top-color:#f0c94a;border-radius:50%;animation:spin .8s linear infinite"></div>
+  <div id="gen-msg" style="color:#fff;font-size:17px;font-weight:700;font-family:Tajawal,sans-serif">🤖 الذكاء الاصطناعي يبني خطتك...</div>
+  <div id="gen-sub" style="color:rgba(255,255,255,.7);font-size:13px;font-family:Tajawal,sans-serif"></div>
+</div>
+<style>@keyframes spin{to{transform:rotate(360deg)}}</style>
+
+<!-- TEMPLATES MODAL -->
+<div class="ov" id="tpl-ov">
+  <div class="mb" style="max-width:680px">
+    <div class="mh"><h2>📄 نماذج جاهزة</h2><button class="mc" onclick="document.getElementById('tpl-ov').classList.remove('open')">✕</button></div>
+    <p style="font-size:12px;color:var(--mu);margin-bottom:14px">اختر نموذجاً ثم أدخل عنوان الدرس وولّد تلقائياً</p>
+    <div id="tpl-grid" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(130px,1fr));gap:9px;margin-bottom:12px"></div>
+  </div>
+</div>
+
+<!-- WEEKLY PLAN MODAL -->
+<div class="ov" id="week-ov">
+  <div class="mb" style="max-width:680px">
+    <div class="mh"><h2>📅 الخطة الأسبوعية</h2><button class="mc" onclick="document.getElementById('week-ov').classList.remove('open')">✕</button></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px">
+      <div><label style="font-size:11px;font-weight:700;color:var(--pr);display:block;margin-bottom:4px">المادة</label>
+        <select id="week-subj" style="width:100%"><option>اللغة العربية - القراءة</option><option>اللغة العربية - القواعد</option><option>الرياضيات</option><option>العلوم الطبيعية</option><option>التربية الإسلامية</option><option>التاريخ</option><option>الجغرافيا</option></select></div>
+      <div><label style="font-size:11px;font-weight:700;color:var(--pr);display:block;margin-bottom:4px">الصف</label>
+        <select id="week-grade" style="width:100%"><option>الصف السادس الابتدائي</option><option>الصف السابع المتوسط</option><option>الصف الثامن المتوسط</option><option selected>الصف التاسع المتوسط</option><option>الصف الأول الثانوي - علمي</option><option>الصف الأول الثانوي - أدبي</option></select></div>
+    </div>
+    <button class="btn bp" onclick="callWeeklyAI()" style="width:100%;justify-content:center;margin-bottom:10px">⚡ <span id="week-btntxt">توليد الخطة الأسبوعية الكاملة</span></button>
+    <div id="week-res" style="display:none;background:var(--bg);border-radius:9px;padding:14px;max-height:400px;overflow-y:auto">
+      <div id="week-out"></div>
+      <div style="display:flex;gap:8px;margin-top:10px">
+        <button class="btn bg" onclick="copyWeekly()" style="flex:1;justify-content:center">📋 نسخ</button>
+        <button class="btn" style="flex:1;justify-content:center;background:#25d366;color:#fff" onclick="shareWeeklyWhatsApp()">📤 واتساب</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MONTHLY REPORT MODAL -->
+<div class="ov" id="report-ov">
+  <div class="mb" style="max-width:700px">
+    <div class="mh"><h2>📊 التقرير الشهري</h2><button class="mc" onclick="document.getElementById('report-ov').classList.remove('open')">✕</button></div>
+    <div id="report-out" style="background:var(--bg);border-radius:9px;padding:14px;max-height:450px;overflow-y:auto;min-height:80px;direction:rtl"></div>
+    <button class="btn bg" onclick="navigator.clipboard.writeText(document.getElementById('report-out').textContent).then(function(){toast('تم النسخ 📋');})" style="width:100%;justify-content:center;margin-top:10px">📋 نسخ التقرير</button>
+  </div>
+</div>
+
+<!-- QUIZ MODAL -->
+<div class="ov" id="quiz-ov">
+  <div class="mb" style="max-width:660px">
+    <div class="mh"><h2>📝 توليد أسئلة اختبار</h2><button class="mc" onclick="document.getElementById('quiz-ov').classList.remove('open')">✕</button></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:9px;margin-bottom:12px">
+      <div><label style="font-size:11px;font-weight:700;color:var(--pr);display:block;margin-bottom:4px">عدد الأسئلة</label><select id="q-count" style="width:100%"><option>5</option><option selected>10</option><option>15</option><option>20</option></select></div>
+      <div><label style="font-size:11px;font-weight:700;color:var(--pr);display:block;margin-bottom:4px">النوع</label><select id="q-type" style="width:100%"><option>متعدد الاختيارات</option><option>صح وخطأ</option><option>مقالية</option><option>مختلطة</option></select></div>
+      <div><label style="font-size:11px;font-weight:700;color:var(--pr);display:block;margin-bottom:4px">المستوى</label><select id="q-level" style="width:100%"><option>سهل</option><option selected>متوسط</option><option>صعب</option></select></div>
+    </div>
+    <button class="btn bp" onclick="callQuizAI()" style="width:100%;justify-content:center;margin-bottom:10px">🚀 <span id="quiz-btntxt">توليد الأسئلة</span></button>
+    <div id="quiz-res" style="display:none;background:var(--bg);border-radius:9px;padding:14px;max-height:360px;overflow-y:auto">
+      <div id="quiz-out"></div>
+      <button class="btn bg" onclick="copyQuiz()" style="width:100%;justify-content:center;margin-top:10px">📋 نسخ الأسئلة</button>
+    </div>
+  </div>
+</div>
+
+<!-- ACTIVITIES MODAL -->
+<div class="ov" id="act-ov">
+  <div class="mb" style="max-width:660px">
+    <div class="mh"><h2>🎮 أنشطة تفاعلية</h2><button class="mc" onclick="document.getElementById('act-ov').classList.remove('open')">✕</button></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-bottom:12px">
+      <div><label style="font-size:11px;font-weight:700;color:var(--pr);display:block;margin-bottom:4px">نوع النشاط</label><select id="act-type" style="width:100%"><option>تعلم تعاوني</option><option>ألعاب تعليمية</option><option>نشاط حركي</option><option selected>مختلطة</option></select></div>
+      <div><label style="font-size:11px;font-weight:700;color:var(--pr);display:block;margin-bottom:4px">وقت النشاط</label><select id="act-time" style="width:100%"><option>5 دقائق</option><option>10 دقائق</option><option selected>15 دقيقة</option><option>20 دقيقة</option></select></div>
+    </div>
+    <button class="btn bp" onclick="callActivitiesAI()" style="width:100%;justify-content:center;margin-bottom:10px">🚀 <span id="act-btntxt">اقتراح الأنشطة</span></button>
+    <div id="act-res" style="display:none;background:var(--bg);border-radius:9px;padding:14px;max-height:360px;overflow-y:auto">
+      <div id="act-out"></div>
+      <button class="btn bg" onclick="applyActivity()" style="width:100%;justify-content:center;margin-top:10px">✅ إضافة للخطة</button>
+    </div>
+  </div>
+</div>
+
+<!-- TRANSLATE MODAL -->
+<div class="ov" id="tr-ov">
+  <div class="mb" style="max-width:680px">
+    <div class="mh"><h2>🌐 ترجمة للإنجليزية</h2><button class="mc" onclick="document.getElementById('tr-ov').classList.remove('open')">✕</button></div>
+    <button class="btn bp" onclick="callTranslateAI()" style="width:100%;justify-content:center;margin-bottom:10px">🚀 <span id="tr-btntxt">ترجمة الآن</span></button>
+    <div id="tr-res" style="display:none;background:var(--bg);border-radius:9px;padding:14px;max-height:400px;overflow-y:auto;direction:ltr">
+      <div id="tr-out" style="white-space:pre-wrap;font-size:13px;line-height:1.8"></div>
+      <button class="btn bg" onclick="copyTranslation()" style="width:100%;justify-content:center;margin-top:10px">📋 Copy</button>
+    </div>
+  </div>
+</div>
+
+<!-- CHAT MODAL -->
+<div class="ov" id="chat-ov">
+  <div class="mb" style="max-width:660px;padding:0;overflow:hidden">
+    <div style="background:linear-gradient(135deg,var(--pr),var(--pl));padding:13px 18px;display:flex;align-items:center;gap:10px">
+      <span style="font-size:18px">💬</span>
+      <span style="font-size:14px;font-weight:900;color:#fff;flex:1">دردشة مع مساعد التدريس</span>
+      <button onclick="document.getElementById('chat-ov').classList.remove('open')" style="background:rgba(255,255,255,.2);color:#fff;border:none;border-radius:50%;width:30px;height:30px;cursor:pointer;font-size:14px">✕</button>
+    </div>
+    <div id="chat-msgs" style="height:320px;overflow-y:auto;padding:14px;background:var(--bg);display:flex;flex-direction:column;gap:8px;direction:rtl">
+      <div style="background:var(--pr);color:#fff;padding:10px 14px;border-radius:12px 12px 12px 0;max-width:82%;font-size:13px;line-height:1.7">مرحباً! أنا مساعدك التعليمي. كيف يمكنني مساعدتك؟ 😊</div>
+    </div>
+    <div style="padding:10px;background:var(--card);border-top:1px solid var(--bd);display:flex;gap:7px">
+      <input type="text" id="chat-inp" placeholder="اكتب سؤالك..." style="flex:1" onkeydown="if(event.key==='Enter')sendChat()">
+      <button class="btn bp" onclick="sendChat()" style="padding:8px 14px;font-size:12px">إرسال</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════════
+// API KEY
+// ════════════════════════════════════════════════════════════════
+function getApiKey(){
+  // كل معلم له مفتاحه الخاص
+  var teacher = document.getElementById('f-teacher');
+  var name = teacher ? (teacher.options ? teacher.options[teacher.selectedIndex].text : teacher.value) : '';
+  if(name.indexOf('حمزة') >= 0){
+    var k = localStorage.getItem('api_key_hamza') || '';
+    if(!k){
+      k = prompt('🔑 أ. حمزة: أدخل مفتاح API الخاص بك (مرة واحدة فقط):', '');
+      if(k && k.startsWith('sk-ant')){
+        localStorage.setItem('api_key_hamza', k);
+      } else {
+        toast('مفتاح غير صحيح', '❌');
+        return '';
+      }
+    }
+    return k;
+  }
+  // أ. خليل — المفتاح مدمج
+  return 'sk-ant-api03-jCvnFGhpPYm0WZBq_FhJi2cGTrAoWB44LXjWWRkZKAeDvbEgZ-wJWsQBxUuOcyLjGY0p3VIrJIRjpJLxpE3JMw-c7lsHQAA';
+}
+
+// ════════════════════════════════════════════════════════════════
+// مؤقت الحصة
+// ════════════════════════════════════════════════════════════════
+var timerSec=3000,timerTotal=3000,timerRunning=false,timerInt=null;
+function timerReset(){
+  clearInterval(timerInt);timerRunning=false;
+  var d=parseInt((document.getElementById('timer-dur')||{}).value||50);
+  timerTotal=d*60;timerSec=timerTotal;timerRender();
+  var b=document.getElementById('timer-btn');if(b)b.textContent='▶ ابدأ';
+}
+function timerToggle(){
+  if(timerRunning){
+    clearInterval(timerInt);timerRunning=false;
+    var b=document.getElementById('timer-btn');if(b)b.textContent='▶ استأنف';
+  }else{
+    if(timerSec<=0)timerReset();
+    timerRunning=true;
+    var b=document.getElementById('timer-btn');if(b)b.textContent='⏸ إيقاف';
+    timerInt=setInterval(function(){
+      timerSec--;timerRender();
+      if(timerSec===300)toast('⚠️ تبقى 5 دقائق');
+      if(timerSec<=0){
+        clearInterval(timerInt);timerRunning=false;
+        var b=document.getElementById('timer-btn');if(b)b.textContent='▶ ابدأ';
+        toast('⏰ انتهت الحصة!');
+      }
+    },1000);
+  }
+}
+function timerSetDur(){
+  var d=parseInt((document.getElementById('timer-dur')||{}).value||50);
+  timerTotal=d*60;timerSec=timerTotal;timerRunning=false;clearInterval(timerInt);
+  timerRender();var b=document.getElementById('timer-btn');if(b)b.textContent='▶ ابدأ';
+}
+function timerRender(){
+  var m=Math.floor(timerSec/60),s=timerSec%60;
+  var disp=(m<10?'0':'')+m+':'+(s<10?'0':'')+s;
+  var el=document.getElementById('timer-display');if(!el)return;
+  el.textContent=disp;
+  el.style.color=timerSec<=300?'#ff6b6b':timerSec<=600?'#f0c94a':'#4ade80';
+  var fill=document.getElementById('timer-fill');
+  if(fill)fill.style.width=Math.max(0,(timerSec/timerTotal*100))+'%';
+}
+
+// ════════════════════════════════════════════════════════════════
+// مؤشر جودة الخطة
+// ════════════════════════════════════════════════════════════════
+function calcQuality(){
+  var score=0;
+  function gv(id){var el=document.getElementById(id);return el?el.value.trim():'';}
+  if(gv('f-title'))score+=0.5;
+  if(gv('f-subject')&&gv('f-subject').indexOf('--')<0)score+=0.5;
+  if(gv('f-grade')&&gv('f-grade').indexOf('--')<0)score+=0.5;
+  if(gv('f-teacher'))score+=0.5;
+  var objs=document.querySelectorAll('#objlist .or2 input'),fo=0;
+  objs.forEach(function(i){if(i.value.trim())fo++;});
+  if(fo>=1)score+=0.5;if(fo>=2)score+=0.5;if(fo>=3)score+=0.5;
+  if(gv('f-introsel')&&gv('f-introsel').indexOf('--')<0)score+=0.5;
+  if(gv('f-intro')&&gv('f-intro').length>20)score+=0.5;
+  var steps=document.querySelectorAll('#stepslist textarea'),fs=0;
+  steps.forEach(function(t){if(t.value.trim())fs++;});
+  if(fs>=1)score+=0.4;if(fs>=3)score+=0.4;if(fs>=4)score+=0.4;if(fs>=5)score+=0.3;
+  if(gv('f-formtool')&&gv('f-formtool').indexOf('--')<0)score+=0.4;
+  if(gv('f-formtext')&&gv('f-formtext').length>10)score+=0.4;
+  if(gv('f-sumtype')&&gv('f-sumtype').indexOf('--')<0)score+=0.4;
+  if(gv('f-hw')&&gv('f-hw').length>5)score+=0.4;
+  if(gv('f-enrich')&&gv('f-enrich').length>5)score+=0.4;
+  if(gv('f-rem')&&gv('f-rem').length>5)score+=0.3;
+  score=Math.min(10,Math.round(score*10)/10);
+  var stars=Math.round(score/2);
+  var lbls=['','ضعيفة','مقبولة','جيدة','جيدة جداً','ممتازة'];
+  var clrs=['','#dc2626','#d97706','#2563eb','#16a34a','#c5962b'];
+  var tips=['','أضف عنوان ومادة وصف','أضف أهدافاً وخطوات','أضف تقويماً','أضف إثراءً وعلاجاً','خطة احترافية متكاملة'];
+  var se=document.getElementById('q-score');
+  var ste=document.getElementById('q-stars');
+  var le=document.getElementById('q-label');
+  var te=document.getElementById('q-tip');
+  if(se){se.textContent=score+'/10';se.style.color=clrs[stars]||'var(--ac)';}
+  if(ste){
+    ste.innerHTML='';
+    for(var i=1;i<=5;i++){
+      var sp=document.createElement('span');
+      sp.textContent='⭐';sp.style.opacity=i<=stars?'1':'0.2';sp.style.fontSize=i<=stars?'17px':'14px';
+      ste.appendChild(sp);
+    }
+  }
+  if(le){le.textContent=lbls[stars]||'';le.style.color=clrs[stars]||'var(--mu)';le.style.fontWeight='700';}
+  if(te)te.textContent=tips[stars]||'';
+  return score;
+}
+
+// ربط الجودة بـ prog
+var _origProg2=prog;
+prog=function(){_origProg2();calcQuality();};
+
+// ════════════════════════════════════════════════════════════════
+// الاختيار الذكي
+// ════════════════════════════════════════════════════════════════
+var SMART_RULES={
+  introsel:{'arabic-listening':'طرح سؤال تحفيزي','arabic-reading':'مراجعة الدرس السابق','arabic-poetry':'قصة أو موقف','arabic-grammar':'مراجعة الدرس السابق','arabic-spelling':'عرض صورة أو مقطع مرئي','arabic-expression':'عصف ذهني','arabic-calligraphy':'عرض صورة أو مقطع مرئي','رياضيات':'طرح سؤال تحفيزي','فيزياء':'عرض صورة أو مقطع مرئي','كيمياء':'نشاط تمهيدي','أحياء':'عرض صورة أو مقطع مرئي','تاريخ':'قصة أو موقف','جغرافيا':'عرض صورة أو مقطع مرئي','إسلامية':'قصة أو موقف','قرآن':'مراجعة الدرس السابق','إنجليزية':'عرض صورة أو مقطع مرئي','علوم':'نشاط تمهيدي','تقنية':'عرض صورة أو مقطع مرئي','default':'طرح سؤال تحفيزي'},
+  strat:{'arabic-listening':'المناقشة والحوار','arabic-reading':'المناقشة والحوار','arabic-poetry':'الإلقاء والشرح','arabic-grammar':'الاستقصاء والاكتشاف','arabic-spelling':'الإلقاء والشرح','arabic-expression':'العصف الذهني','arabic-calligraphy':'الإلقاء والشرح','رياضيات':'حل المشكلات','فيزياء':'الاستقصاء والاكتشاف','كيمياء':'الاستقصاء والاكتشاف','أحياء':'الاستقصاء والاكتشاف','تاريخ':'المناقشة والحوار','جغرافيا':'الخرائط الذهنية','إسلامية':'المناقشة والحوار','قرآن':'الإلقاء والشرح','إنجليزية':'التعلم التعاوني','علوم':'الاستقصاء والاكتشاف','تقنية':'التعلم بالمشروع','default':'التعلم التعاوني'},
+  org:{'arabic-listening':'صفي كامل','arabic-reading':'فردي','arabic-poetry':'صفي كامل','arabic-grammar':'ثنائي','arabic-spelling':'فردي','arabic-expression':'فردي','arabic-calligraphy':'فردي','رياضيات':'فردي','فيزياء':'مجموعات صغيرة','كيمياء':'مجموعات صغيرة','أحياء':'مجموعات صغيرة','تاريخ':'متنوع','جغرافيا':'متنوع','إسلامية':'صفي كامل','قرآن':'فردي','إنجليزية':'مجموعات صغيرة','علوم':'مجموعات صغيرة','تقنية':'ثنائي','default':'مجموعات صغيرة'},
+  formtool:{'arabic-listening':'أسئلة شفهية','arabic-reading':'أسئلة شفهية','arabic-poetry':'أسئلة شفهية','arabic-grammar':'ورقة عمل','arabic-spelling':'ورقة عمل','arabic-expression':'ملاحظة المعلم','arabic-calligraphy':'ملاحظة المعلم','رياضيات':'ورقة عمل','فيزياء':'ورقة عمل','كيمياء':'ورقة عمل','أحياء':'قائمة رصد','تاريخ':'أسئلة شفهية','جغرافيا':'بطاقة خروج','إسلامية':'أسئلة شفهية','قرآن':'ملاحظة المعلم','إنجليزية':'بطاقة خروج','علوم':'قائمة رصد','تقنية':'مقياس تقدير','default':'أسئلة شفهية'},
+  formtime:{'arabic-listening':'في منتصف الدرس','arabic-reading':'بعد كل فقرة','arabic-poetry':'بعد كل فقرة','arabic-grammar':'بعد كل فقرة','arabic-spelling':'أثناء الدرس','arabic-expression':'متواصل','arabic-calligraphy':'متواصل','رياضيات':'بعد كل فقرة','فيزياء':'في منتصف الدرس','كيمياء':'في منتصف الدرس','أحياء':'متواصل','تاريخ':'بعد كل فقرة','جغرافيا':'في منتصف الدرس','إسلامية':'بعد كل فقرة','قرآن':'متواصل','إنجليزية':'بعد كل فقرة','علوم':'متواصل','تقنية':'متواصل','default':'في منتصف الدرس'},
+  sumtype:{'arabic-listening':'أسئلة مراجعة','arabic-reading':'أسئلة مراجعة','arabic-poetry':'أسئلة مراجعة','arabic-grammar':'نشاط تطبيقي','arabic-spelling':'نشاط تطبيقي','arabic-expression':'عرض أمام الفصل','arabic-calligraphy':'نشاط تطبيقي','رياضيات':'اختبار قصير','فيزياء':'نشاط تطبيقي','كيمياء':'نشاط تطبيقي','أحياء':'نشاط تطبيقي','تاريخ':'أسئلة مراجعة','جغرافيا':'أسئلة مراجعة','إسلامية':'أسئلة مراجعة','قرآن':'نشاط تطبيقي','إنجليزية':'نشاط تطبيقي','علوم':'نشاط تطبيقي','تقنية':'مشروع صغير','default':'أسئلة مراجعة'}
+};
+function getSubjectKey(s){
+  if(!s)return 'default';
+  if(s.indexOf('arabic-')===0)return s;
+  var map={'رياضيات':'رياضيات','فيزياء':'فيزياء','كيمياء':'كيمياء','أحياء':'أحياء','تاريخ':'تاريخ','جغرافيا':'جغرافيا','إسلامية':'إسلامية','قرآن':'قرآن','إنجليزية':'إنجليزية','فرنسية':'فرنسية','علوم':'علوم','تقنية':'تقنية','وطنية':'وطنية','فلسفة':'فلسفة'};
+  for(var k in map)if(s.indexOf(k)>=0)return map[k];
+  return 'default';
+}
+function smartSelect(id,val){
+  var sel=document.getElementById(id);if(!sel||!val)return;
+  for(var i=0;i<sel.options.length;i++){
+    if(sel.options[i].text===val){sel.selectedIndex=i;return;}
+  }
+}
+function applySmartSelections(subj){
+  var key=getSubjectKey(subj);
+  var map={'f-introsel':'introsel','f-strat':'strat','f-org':'org','f-formtool':'formtool','f-formtime':'formtime','f-sumtype':'sumtype'};
+  for(var id in map){var r=SMART_RULES[map[id]];smartSelect(id,r[key]||r['default']);}
+  toast('⚡ اختيار ذكي للعناصر التعليمية');
+}
+(function(){
+  var s=document.getElementById('f-subject');
+  if(s)s.addEventListener('change',function(){if(this.value&&this.value.indexOf('--')<0)setTimeout(function(){applySmartSelections(s.value);},200);});
+})();
+
+// ════════════════════════════════════════════════════════════════
+// التوليد التلقائي
+// ════════════════════════════════════════════════════════════════
+var autoTimer=null,autoTriggered=false,lastAutoKey='';
+function hookAutoGen(){
+  ['f-subject','f-grade','f-title'].forEach(function(id){
+    var el=document.getElementById(id);
+    if(el){el.addEventListener('change',scheduleAutoGen);el.addEventListener('input',scheduleAutoGen);}
+  });
+  var te=document.getElementById('f-teacher');
+  if(te)te.addEventListener('input',function(){localStorage.setItem('lp_teacher',te.value);});
+}
+function scheduleAutoGen(){
+  var s=document.getElementById('f-subject').value;
+  var g=document.getElementById('f-grade').value;
+  var t=document.getElementById('f-title').value.trim();
+  if(!s||s.indexOf('--')>=0||!g||g.indexOf('--')>=0)return;
+  var key=s+'|'+g+'|'+t;
+  if(key===lastAutoKey)return;
+  var st=document.getElementById('auto-status');
+  if(st)st.textContent=t?'✅ جاهز: '+s+' — '+t:'✅ '+s+' — أضف عنوان الدرس';
+  if(!t)return;
+  clearTimeout(autoTimer);
+  autoTimer=setTimeout(function(){if(!autoTriggered||key!==lastAutoKey)triggerAutoGen();},1500);
+}
+function triggerAutoGen(){
+  var s=document.getElementById('f-subject').value;
+  var g=document.getElementById('f-grade').value;
+  var t=document.getElementById('f-title').value.trim();
+  var teacher=document.getElementById('f-teacher').value;
+  var dur=document.getElementById('f-dur').value;
+  if(!s||s.indexOf('--')>=0){toast('اختر المادة أولاً','⚠️');return;}
+  if(!g||g.indexOf('--')>=0){toast('اختر الصف أولاً','⚠️');return;}
+  if(!t){toast('أدخل عنوان الدرس','⚠️');return;}
+  lastAutoKey=s+'|'+g+'|'+t;autoTriggered=true;
+  var prompt='أعدّ خطة درس يومية احترافية كاملة:\nالمادة: '+s+'\nالصف: '+g+'\nالدرس: '+t
+    +(teacher?'\nالمعلم: '+teacher:'')+(dur?'\nمدة الحصة: '+dur:'')
+    +'\nالمدرسة: مدرسة ذكور بيت عوا الثانوية - مديرية التربية / جنوب الخليل'
+    +'\nاملأ جميع الأقسام بتفصيل عالٍ ومناسب للمرحلة الدراسية.';
+  autoGenCall(prompt);
+}
+async function autoGenCall(prompt){
+  var ov=document.getElementById('gen-overlay');
+  var msgEl=document.getElementById('gen-msg');
+  var subEl=document.getElementById('gen-sub');
+  if(ov)ov.style.display='flex';
+  var stages=['🎯 صياغة الأهداف...','📚 المتطلبات والوسائل...','🌅 بناء التمهيد...','📊 خطوات عرض الدرس...','🔍 التقويم التكويني...','✅ التقويم الختامي...','🎉 اللمسات الأخيرة...'];
+  var si=0;
+  if(msgEl)msgEl.textContent='🤖 الذكاء الاصطناعي يبني خطتك...';
+  var st=setInterval(function(){if(subEl&&si<stages.length)subEl.textContent=stages[si++];},1200);
+  var SYS='أنت خبير تربوي فلسطيني متخصص. أجب بـ JSON فقط لا غير، بدون أي نص قبله أو بعده: {"objectives_cognitive":["3 أهداف معرفية دقيقة تبدأ بأن يـ"],"objectives_skills":["2-3 أهداف مهارية تطبيقية"],"objectives_affective":["1-2 أهداف وجدانية"],"prerequisites":"المتطلبات السابقة","tools":"الوسائل والأدوات التعليمية","intro_method":"أسلوب التمهيد","intro_text":"نص تمهيد جذاب ومفصّل","strategy":"استراتيجية تدريسية","organization":"تنظيم الصف","steps":["خطوة مفصّلة 1","خطوة 2","خطوة 3","خطوة 4","خطوة 5"],"formative_tool":"أداة التقويم التكويني","formative_time":"توقيت التطبيق","formative_assessment":"وصف التقويم التكويني","summative_type":"نوع التقويم الختامي","summative_assessment":"وصف وأسئلة التقويم الختامي","homework":"واجب منزلي مناسب","enrichment":"نشاط إثرائي للمتفوقين","remedial":"نشاط علاجي للمتأخرين"}';
+  try{
+    var raw = await callProvider([{role:'user',content:prompt}], SYS, 4000);
+    raw = raw.replace(/```json\s*/gi,'').replace(/```\s*/g,'').trim();
+    var d;
+    try{d=JSON.parse(raw);}catch(e){
+      var fx=raw;
+      var qc=(fx.match(/(?<!\\)"/g)||[]).length;
+      if(qc%2!==0)fx+='"';
+      var ao=(fx.match(/\[/g)||[]).length-(fx.match(/\]/g)||[]).length;
+      for(var ai=0;ai<ao;ai++)fx+='"]';
+      var oo=(fx.match(/\{/g)||[]).length-(fx.match(/\}/g)||[]).length;
+      for(var oi=0;oi<oo;oi++)fx+='}';
+      d=JSON.parse(fx);
+    }
+    clearInterval(st);if(ov)ov.style.display='none';
+    applyAIData(d);
+    setTimeout(saveLesson,600);
+    var statusEl=document.getElementById('auto-status');
+    if(statusEl)statusEl.textContent='✅ تم توليد الخطة كاملة وحفظها!';
+    toast('🎉 تم توليد الخطة الاحترافية!');
+  }catch(e){
+    clearInterval(st);if(ov)ov.style.display='none';
+    toast('خطأ: '+(e.message||'تحقق من الإنترنت'),'❌');
+    var statusEl=document.getElementById('auto-status');
+    if(statusEl)statusEl.textContent='❌ '+(e.message||'خطأ');
+  }
+}
+function applyAIData(d){
+  if(!d)return;
+  document.getElementById('objlist').innerHTML='';
+  function fobj(arr,cls,lbl){(arr||[]).forEach(function(t){var div=document.createElement('div');div.className='or2';div.innerHTML='<span class="bdg '+cls+'">'+lbl+'</span><input type="text" value="'+t.replace(/"/g,'&quot;').replace(/</g,'&lt;')+'" oninput="prog()"><button class="xb" onclick="delrow(this)">✕</button>';document.getElementById('objlist').appendChild(div);});}
+  fobj(d.objectives_cognitive,'cog','معرفي');fobj(d.objectives_skills,'skl','مهاري');fobj(d.objectives_affective,'aff','وجداني');
+  function sv(id,v){var el=document.getElementById(id);if(el&&v)el.value=v;}
+  function ss(id,v){var sel=document.getElementById(id);if(!sel||!v)return;for(var i=0;i<sel.options.length;i++){if(sel.options[i].text===v||sel.options[i].text.includes(v)){sel.selectedIndex=i;return;}}}
+  sv('f-prereq',d.prerequisites);sv('f-tools',d.tools);
+  var subjVal=document.getElementById('f-subject').value;
+  applySmartSelections(subjVal);
+  if(d.intro_method)ss('f-introsel',d.intro_method);sv('f-intro',d.intro_text);
+  if(d.strategy)ss('f-strat',d.strategy);if(d.organization)ss('f-org',d.organization);
+  if(d.formative_tool)ss('f-formtool',d.formative_tool);if(d.formative_time)ss('f-formtime',d.formative_time);
+  sv('f-formtext',d.formative_assessment);if(d.summative_type)ss('f-sumtype',d.summative_type);
+  sv('f-sumtext',d.summative_assessment);sv('f-hw',d.homework);sv('f-enrich',d.enrichment);sv('f-rem',d.remedial);
+  var sl=document.getElementById('stepslist');
+  if(sl){sl.innerHTML='';sc=0;(d.steps||[]).forEach(function(step){sc++;var div=document.createElement('div');div.className='sr';div.innerHTML='<div class="sn">'+an(sc)+'</div><textarea oninput="prog()">'+step.replace(/</g,'&lt;')+'</textarea>';sl.appendChild(div);});}
+  document.querySelectorAll('.cb').forEach(function(b){b.classList.remove('h');});
+  document.querySelectorAll('.ctg').forEach(function(b){b.textContent='▼';});
+  prog();window.scrollTo({top:0,behavior:'smooth'});
+}
+
+// ════════════════════════════════════════════════════════════════
+// PDF / طباعة
+// ════════════════════════════════════════════════════════════════
+function doPrint(){
+  var html = buildPrintHTML();
+
+  // ══ محاولة 1: window.open (حاسوب + أندرويد Chrome) ══
+  try{
+    var w = window.open('','_blank','width=900,height=700,scrollbars=yes');
+    if(w && !w.closed){
+      w.document.write(html);
+      w.document.close();
+      w.focus();
+      setTimeout(function(){
+        try{
+          w.print();
+          toast('🖨️ جارٍ الإرسال للطابعة HP...');
+        }catch(e){ w.close(); method2(html); }
+      }, 600);
+      return;
+    }
+  }catch(e){}
+
+  // ══ محاولة 2: iframe مخفي ══
+  method2(html);
+}
+
+function method2(html){
+  try{
+    var iframe = document.getElementById('pf');
+    if(!iframe){
+      iframe = document.createElement('iframe');
+      iframe.id = 'pf';
+      iframe.style.cssText = 'position:fixed;left:0;top:0;width:100%;height:100%;border:none;z-index:-1;opacity:0;';
+      document.body.appendChild(iframe);
+    }
+    var d = iframe.contentDocument || iframe.contentWindow.document;
+    d.open(); d.write(html); d.close();
+    setTimeout(function(){
+      try{
+        iframe.contentWindow.focus();
+        iframe.contentWindow.print();
+        toast('🖨️ جارٍ الإرسال للطابعة...');
+      }catch(e){ method3(html); }
+    }, 600);
+  }catch(e){ method3(html); }
+}
+
+function method3(html){
+  // ══ محاولة 3: Blob URL ══
+  try{
+    var blob = new Blob([html],{type:'text/html;charset=utf-8'});
+    var url  = URL.createObjectURL(blob);
+    var w    = window.open(url,'_blank');
+    if(w){
+      setTimeout(function(){
+        try{ w.print(); toast('🖨️ جارٍ الطباعة...'); }
+        catch(e){ method4(html, url); }
+      }, 800);
+    } else { method4(html, null); }
+  }catch(e){ method4(html, null); }
+}
+
+function method4(html, blobUrl){
+  // ══ محاولة 4: تحميل HTML + تعليمات واضحة ══
+  try{
+    var blob = new Blob([html],{type:'text/html;charset=utf-8'});
+    var url  = blobUrl || URL.createObjectURL(blob);
+    var a    = document.createElement('a');
+    var ttl  = (document.getElementById('f-title')||{}).value||'خطة_درس';
+    a.href   = url;
+    a.download = 'خطة_'+ttl.replace(/\s+/g,'_')+'.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }catch(e){}
+  // عرض المعاينة الداخلية في كل الأحوال
+  showInternalPreview(html);
+}
+
+function showInternalPreview(html){
+  var ov = document.getElementById('preview-ov');
+  var ct = document.getElementById('preview-content');
+  if(!ov||!ct) return;
+  var body  = html.replace(/[\s\S]*?<body[^>]*>/i,'').replace(/<\/body>[\s\S]*/i,'');
+  var style = (html.match(/<style[^>]*>([\s\S]*?)<\/style>/i)||['',''])[1];
+  ct.innerHTML = '<style>'+style+'</style>' + body;
+  ov.style.display = 'block';
+  ov.scrollTop = 0;
+}
+
+function browserPrint(){
+  var html = buildPrintHTML();
+  method2(html);
+}
+
+function directIframePrint(html){
+  var iframe = document.getElementById('print-iframe');
+  if(!iframe){
+    iframe = document.createElement('iframe');
+    iframe.id = 'print-iframe';
+    iframe.style.cssText = 'position:fixed;width:1px;height:1px;top:-200px;left:-200px;border:none;';
+    document.body.appendChild(iframe);
+  }
+  var idoc = iframe.contentDocument || iframe.contentWindow.document;
+  idoc.open(); idoc.write(html); idoc.close();
+  setTimeout(function(){
+    iframe.contentWindow.focus();
+    iframe.contentWindow.print();
+    toast('🖨️ جارٍ الإرسال للطابعة...');
+  }, 500);
+}
+
+function showPrintPreview(html){
+  // ══ الطريقة 2: معاينة داخلية مع زر طباعة ══
+  var ov = document.getElementById('preview-ov');
+  var content = document.getElementById('preview-content');
+  if(ov && content){
+    // حذف tags الخارجية
+    var body = html.replace(/[\s\S]*?<body[^>]*>/i,'').replace(/<\/body>[\s\S]*/i,'');
+    // إضافة CSS مضمّن
+    var styles = html.match(/<style[^>]*>([\s\S]*?)<\/style>/i);
+    content.innerHTML = (styles?'<style>'+styles[1]+'</style>':'')+body;
+    ov.style.display = 'block';
+    ov.scrollTop = 0;
+    toast('📄 اضغط 🖨️ طباعة في الأعلى');
+  }
+}
+
+function browserPrint(){
+  var html = buildPrintHTML();
+  // تحميل كـ HTML ← يفتح في Chrome ← طباعة لـ HP
+  try{
+    var blob = new Blob([html], {type:'text/html;charset=utf-8'});
+    var url  = URL.createObjectURL(blob);
+    var a    = document.createElement('a');
+    a.href   = url;
+    var ttl  = (document.getElementById('f-title')||{}).value||'خطة_درس';
+    a.download = 'خطة_'+ttl.replace(/\s+/g,'_')+'.html';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    // إظهار تعليمات واضحة
+    showHPInstructions();
+  }catch(e){
+    toast('استخدم زر المشاركة ← طباعة','⚠️');
+  }
+}
+
+function showHPInstructions(){
+  var box = document.getElementById('hp-instructions');
+  if(box){ box.style.display='block'; return; }
+  box = document.createElement('div');
+  box.id = 'hp-instructions';
+  box.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,.75);z-index:99999;display:flex;align-items:center;justify-content:center;padding:16px;font-family:Tajawal,sans-serif;direction:rtl';
+  box.innerHTML = '<div style="background:#fff;border-radius:16px;max-width:400px;width:100%;padding:24px;text-align:center">'
+    +'<div style="font-size:40px;margin-bottom:10px">🖨️</div>'
+    +'<h3 style="color:#1a3a5c;font-size:16px;margin-bottom:14px;font-family:Amiri,serif">طباعة على HP LaserJet M110w</h3>'
+    +'<div style="background:#f0f7ff;border-radius:10px;padding:14px;text-align:right;margin-bottom:14px">'
+    +'<div style="font-size:13px;font-weight:700;color:#1a3a5c;margin-bottom:8px">خطوات بسيطة:</div>'
+    +'<div style="font-size:12px;line-height:2;color:#333">'
+    +'<div>① تم تحميل الملف على جهازك ✅</div>'
+    +'<div>② افتح الملف بـ <strong>Chrome</strong></div>'
+    +'<div>③ اضغط <strong>⋮</strong> ← <strong>طباعة</strong></div>'
+    +'<div>④ اختر <strong>HP LaserJet M110w</strong></div>'
+    +'<div>⑤ اضغط <strong>طباعة</strong> ✅</div>'
+    +'</div></div>'
+    +'<div style="background:#fff8dc;border-radius:8px;padding:10px;font-size:11px;color:#7a5c00;margin-bottom:14px">'
+    +'💡 تأكد أن هاتفك متصل بنفس WiFi الطابعة'
+    +'</div>'
+    +'<button onclick="document.getElementById(\'hp-instructions\').style.display=\'none\'" '
+    +'style="background:linear-gradient(135deg,#1a3a5c,#2d6a9f);color:#fff;border:none;border-radius:10px;padding:11px 28px;font-family:Tajawal,sans-serif;font-size:14px;font-weight:700;cursor:pointer;width:100%">'
+    +'✅ فهمت — سأفتح الملف في Chrome'
+    +'</button>'
+    +'</div>';
+  document.body.appendChild(box);
+}
+
+
+
+// ════════════════════════════════════════════════════════════════
+// بحث في المحفوظات
+// ════════════════════════════════════════════════════════════════
+function searchLessons(q){
+  var el=document.getElementById('slist');if(!el)return;
+  q=(q||'').trim().toLowerCase();
+  var filtered=q?lessons.filter(function(l){return (l.title||'').toLowerCase().indexOf(q)>=0||(l.subject||'').toLowerCase().indexOf(q)>=0||(l.grade||'').toLowerCase().indexOf(q)>=0||(l.teacher||'').toLowerCase().indexOf(q)>=0||(l.semester||'').toLowerCase().indexOf(q)>=0;}):lessons;
+  document.getElementById('saved-count').textContent=filtered.length+' درس'+(q?' — نتائج "'+q+'"':'');
+  if(!filtered.length){el.innerHTML='<div style="text-align:center;padding:40px;color:var(--mu)"><div style="font-size:36px;margin-bottom:8px">🔍</div><p>لا نتائج لـ "'+q+'"</p></div>';return;}
+  el.innerHTML=filtered.map(function(l){
+    return '<div class="si2" onclick="loadLesson('+l.id+')">'
+      +'<div style="font-size:22px">📄</div>'
+      +'<div class="si2-i"><h4>'+(l.title||'درس بدون عنوان')+'</h4><p>'+(l.subject||'-')+' | '+(l.grade||'-')+' | '+l.savedAt+'</p></div>'
+      +'<div class="si2-a">'
+      +'<button class="tb" onclick="event.stopPropagation();loadLesson('+l.id+')" style="font-size:11px">📂</button>'
+      +'<button class="tb" onclick="event.stopPropagation();duplicateLesson('+l.id+')" style="font-size:11px">🔁</button>'
+      +'<button class="tb" onclick="event.stopPropagation();delLesson('+l.id+',event)" style="font-size:11px;color:#dc2626">🗑️</button>'
+      +'</div></div>';
+  }).join('');
+}
+function duplicateLesson(id){
+  var l=lessons.find(function(x){return x.id===id;});if(!l)return;
+  var copy=JSON.parse(JSON.stringify(l));
+  copy.id=Date.now();copy.title=(copy.title||'')+' (نسخة)';copy.savedAt=new Date().toLocaleDateString('ar-SA');
+  lessons.unshift(copy);localStorage.setItem('lp_lessons',JSON.stringify(lessons));
+  renderSaved();toast('✅ تم نسخ الدرس');
+}
+
+// ════════════════════════════════════════════════════════════════
+// نماذج جاهزة
+// ════════════════════════════════════════════════════════════════
+var LESSON_TEMPLATES=[
+  {icon:'📖',name:'قراءة نصية',sub:'عربي',data:{subject:'arabic-reading',objectives_cognitive:['أن يقرأ الطالب النص قراءة جهرية صحيحة','أن يفهم مضمون النص ويستخلص أفكاره','أن يشرح المفردات الجديدة'],objectives_skills:['أن يجيب عن أسئلة الفهم','أن يوظّف المفردات في جمل'],objectives_affective:['أن يقدّر جمال اللغة العربية'],steps:['التمهيد: مراجعة الدرس السابق','القراءة النموذجية للمعلم','القراءة الجماعية مع الضبط','شرح المفردات والتراكيب','أسئلة الفهم والاستيعاب']}},
+  {icon:'📐',name:'قاعدة نحوية',sub:'قواعد',data:{subject:'arabic-grammar',objectives_cognitive:['أن يتعرف على الظاهرة اللغوية','أن يستنتج القاعدة النحوية','أن يميّز الظاهرة في النصوص'],objectives_skills:['أن يطبق القاعدة في تمارين','أن يعرب الكلمات تبعاً للقاعدة'],objectives_affective:['أن يقدّر دور النحو في ضبط اللغة'],steps:['التمهيد: مراجعة القاعدة السابقة','عرض الأمثلة على السبورة','قيادة الطلاب لاستنتاج القاعدة','كتابة القاعدة بصياغة واضحة','تمارين شفهية وكتابية متدرجة']}},
+  {icon:'🔢',name:'مسألة رياضية',sub:'رياضيات',data:{subject:'الرياضيات',objectives_cognitive:['أن يتعرف على المفهوم الرياضي','أن يفهم خطوات الحل','أن يشرح العلاقات الرياضية'],objectives_skills:['أن يطبق الخطوات في حل مسائل','أن يتحقق من صحة حله'],objectives_affective:['أن يقدّر أهمية الرياضيات في الحياة'],steps:['سؤال تحفيزي من الحياة اليومية','شرح المفهوم مع الرسم والتمثيل','مثال محلول تفصيلي على السبورة','تطبيق موجّه مع توجيه المعلم','عمل فردي مستقل']}},
+  {icon:'🌿',name:'درس إسلامي',sub:'تربية إسلامية',data:{subject:'التربية الإسلامية',objectives_cognitive:['أن يتعرف على الحكم الشرعي','أن يفهم الأدلة الشرعية','أن يشرح مفاهيم الدرس'],objectives_skills:['أن يطبق الحكم في مواقف الحياة','أن يستدل بالآيات والأحاديث'],objectives_affective:['أن يعزز انتماءه للإسلام وقيمه'],steps:['قصة واقعية تمهيدية','الشرح مع الآيات والأحاديث','المناقشة بين المعلم والطلاب','ربط الدرس بالحياة اليومية','أسئلة ختامية وتوجيهات']}},
+  {icon:'🔬',name:'درس علمي',sub:'علوم',data:{subject:'العلوم الطبيعية',objectives_cognitive:['أن يتعرف على المفهوم العلمي','أن يحدد خصائص الظاهرة','أن يشرح العلاقة بين المتغيرات'],objectives_skills:['أن يجري التجربة بخطواتها','أن يسجّل الملاحظات بدقة'],objectives_affective:['أن يقدّر أهمية العلوم في تفسير الطبيعة'],steps:['عرض صورة أو مقطع مرئي','طرح سؤال بحثي واضح','تنفيذ التجربة في مجموعات','رصد النتائج وتدوينها','مقارنة النتائج واستنتاجها']}},
+  {icon:'🌍',name:'درس تاريخي',sub:'تاريخ',data:{subject:'التاريخ',objectives_cognitive:['أن يحدد الأحداث التاريخية','أن يشرح أسباب الحدث ونتائجه','أن يربط الأحداث بسياقها الزمني'],objectives_skills:['أن يحلّل الحدث التاريخي','أن يستخلص العبر والدروس'],objectives_affective:['أن يعزز انتماءه الوطني وفخره بتاريخه'],steps:['قصة أو موقف تاريخي تمهيدي','عرض الأحداث بترتيبها الزمني','مناقشة الأسباب والنتائج','استخلاص الدروس من التاريخ','أسئلة تحليلية ختامية']}}
+];
+function openTemplates(){
+  var ov=document.getElementById('tpl-ov');if(!ov)return;
+  var grid=document.getElementById('tpl-grid');
+  if(grid)grid.innerHTML=LESSON_TEMPLATES.map(function(t,i){
+    return '<div onclick="applyTemplate('+i+')" style="background:var(--card);border:1.5px solid var(--bd);border-radius:11px;padding:14px 10px;text-align:center;cursor:pointer;transition:.2s;font-family:Tajawal,sans-serif" onmouseover="this.style.borderColor=\'var(--ac)\';this.style.transform=\'translateY(-2px)\'" onmouseout="this.style.borderColor=\'var(--bd)\';this.style.transform=\'\'">'
+      +'<div style="font-size:30px;margin-bottom:6px">'+t.icon+'</div>'
+      +'<div style="font-size:12px;font-weight:700;color:var(--pr)">'+t.name+'</div>'
+      +'<div style="font-size:10px;color:var(--mu);margin-top:2px">'+t.sub+'</div>'
+      +'</div>';
+  }).join('');
+  ov.classList.add('open');
+}
+function applyTemplate(idx){
+  var tpl=LESSON_TEMPLATES[idx];if(!tpl)return;
+  var d=tpl.data;
+  var subjSel=document.getElementById('f-subject');
+  if(subjSel&&d.subject){for(var i=0;i<subjSel.options.length;i++){if(subjSel.options[i].value===d.subject||subjSel.options[i].text.indexOf(d.subject)>=0){subjSel.selectedIndex=i;break;}}}
+  applyAIData({objectives_cognitive:d.objectives_cognitive||[],objectives_skills:d.objectives_skills||[],objectives_affective:d.objectives_affective||[],intro_method:'',intro_text:'',prerequisites:'',tools:'',steps:d.steps||[],strategy:'',organization:'',formative_tool:'',formative_text:'',summative_type:'',summative_assessment:'',homework:'',enrichment:'',remedial:''});
+  applySmartSelections(d.subject||'');
+  document.getElementById('tpl-ov').classList.remove('open');
+  toast('✅ تم تطبيق النموذج — أدخل عنوان الدرس ثم ولّد');
+}
+
+// ════════════════════════════════════════════════════════════════
+// خطة أسبوعية
+// ════════════════════════════════════════════════════════════════
+var lastWeeklyText='';
+function genWeeklyPlan(){var ov=document.getElementById('week-ov');if(ov)ov.classList.add('open');}
+async function callWeeklyAI(){
+  var subj=document.getElementById('week-subj').value;
+  var grade=document.getElementById('week-grade').value;
+  var btn=document.getElementById('week-btntxt');btn.textContent='⏳ جارٍ التوليد...';
+  document.getElementById('week-res').style.display='none';
+  var prompt='أعدّ خطة أسبوعية احترافية لمادة "'+subj+'" للصف "'+grade+'" تشمل 5 دروس (الأحد-الخميس) في مدرسة ذكور بيت عوا الثانوية. لكل يوم: عنوان الدرس، الهدف الرئيسي، الاستراتيجية، الوسائل، والتقويم.';
+  try{
+    lastWeeklyText = await callProvider([{role:'user',content:prompt}], null, 2500);
+    document.getElementById('week-out').innerHTML='<div style="white-space:pre-wrap;font-size:13px;line-height:1.9;direction:rtl">'+lastWeeklyText+'</div>';
+    document.getElementById('week-res').style.display='block';
+    toast('✅ تم توليد الخطة الأسبوعية');
+  }catch(e){toast('خطأ: '+(e.message||''),'❌');}
+  btn.textContent='توليد الخطة الأسبوعية';
+}
+function copyWeekly(){navigator.clipboard.writeText(lastWeeklyText).then(function(){toast('تم النسخ 📋');});}
+function shareWeeklyWhatsApp(){
+  if(!lastWeeklyText){toast('ولّد الخطة أولاً','⚠️');return;}
+  window.open('https://wa.me/?text='+encodeURIComponent('📅 الخطة الأسبوعية\n🏫 مدرسة ذكور بيت عوا الثانوية\n━━━━━━━━━━\n'+lastWeeklyText.slice(0,1500)),'_blank');
+}
+
+// ════════════════════════════════════════════════════════════════
+// تقرير شهري
+// ════════════════════════════════════════════════════════════════
+async function genMonthlyReport(){
+  if(!lessons.length){toast('لا توجد دروس محفوظة','⚠️');return;}
+  var ov=document.getElementById('report-ov');if(!ov)return;
+  ov.classList.add('open');
+  var outEl=document.getElementById('report-out');
+  outEl.innerHTML='<div style="text-align:center;padding:30px;color:var(--mu)">⏳ جارٍ إنشاء التقرير...</div>';
+  var subjCount={};var grades=new Set();var totalObjs=0;
+  lessons.forEach(function(l){
+    if(l.subject)subjCount[l.subject]=(subjCount[l.subject]||0)+1;
+    if(l.grade)grades.add(l.grade);
+    totalObjs+=(l.objs||[]).length;
+  });
+  var topSubj=Object.entries(subjCount).sort(function(a,b){return b[1]-a[1];}).slice(0,3);
+  var avgRating=0;var rCount=0;
+  lessons.forEach(function(l){if(l.ratings){Object.values(l.ratings).forEach(function(v){if(v>0){avgRating+=v;rCount++;}});}});
+  var prompt='أنا معلم في مدرسة ذكور بيت عوا الثانوية. إليك ملخص درسي خلال الشهر الماضي:\n'
+    +'عدد الدروس المحضّرة: '+lessons.length+'\n'
+    +'المواد: '+Object.keys(subjCount).join('، ')+'\n'
+    +'إجمالي الأهداف: '+totalObjs+' هدفاً\n'
+    +'متوسط التقييم: '+(rCount?(avgRating/rCount).toFixed(1)+'/5':'غير متاح')+'\n'
+    +'أكثر المواد تحضيراً: '+topSubj.map(function(x){return x[0]+'('+x[1]+')';}).join('، ')+'\n\n'
+    +'أنشئ تقريراً شهرياً احترافياً يشمل: الإنجازات، التحليل، التوصيات للشهر القادم.';
+  try{
+    var text = await callProvider([{role:'user',content:prompt}], null, 1500);
+    outEl.innerHTML='<div style="white-space:pre-wrap;font-size:13px;line-height:1.9;direction:rtl">'+text+'</div>';
+    toast('✅ تم إنشاء التقرير الشهري');
+  }catch(e){outEl.innerHTML='<div style="color:#dc2626">خطأ: '+(e.message||'')+'</div>';}
+}
+
+// ════════════════════════════════════════════════════════════════
+// الدردشة
+// ════════════════════════════════════════════════════════════════
+var chatHistory=[];
+function openChat(){
+  var t=document.getElementById('f-title').value,s=document.getElementById('f-subject').value;
+  chatHistory=t||s?[{role:'user',content:'سياق الدرس: '+s+' - '+t},{role:'assistant',content:'أهلاً! جاهز لمساعدتك في درس "'+t+'"'}]:[];
+  var ov=document.getElementById('chat-ov');if(ov)ov.classList.add('open');
+  setTimeout(function(){var i=document.getElementById('chat-inp');if(i)i.focus();},300);
+}
+async function sendChat(){
+  var inp=document.getElementById('chat-inp');var msg=inp?inp.value.trim():'';if(!msg)return;inp.value='';
+  var msgs=document.getElementById('chat-msgs');if(!msgs)return;
+  var uDiv=document.createElement('div');uDiv.style.cssText='background:var(--ac);color:#1a1a1a;padding:10px 14px;border-radius:12px 12px 0 12px;max-width:82%;align-self:flex-end;font-size:13px;line-height:1.7;margin-right:auto';uDiv.textContent=msg;msgs.appendChild(uDiv);
+  var ty=document.createElement('div');ty.style.cssText='padding:10px 14px;border-radius:12px;font-size:18px';ty.textContent='...';msgs.appendChild(ty);msgs.scrollTop=msgs.scrollHeight;
+  chatHistory.push({role:'user',content:msg});
+  try{
+    var reply = await callProvider(chatHistory.slice(-8), 'أنت مساعد تعليمي للمعلمين. أجب بإيجاز بالعربية.', 700);
+    ty.remove();var aDiv=document.createElement('div');aDiv.style.cssText='background:var(--pr);color:#fff;padding:10px 14px;border-radius:12px 12px 12px 0;max-width:82%;font-size:13px;line-height:1.8;white-space:pre-wrap';aDiv.textContent=reply;msgs.appendChild(aDiv);msgs.scrollTop=msgs.scrollHeight;
+    chatHistory.push({role:'assistant',content:reply});
+  }catch(e){ty.remove();toast('خطأ: '+(e.message||''),'❌');}
+}
+
+// ════════════════════════════════════════════════════════════════
+// أسئلة اختبار
+// ════════════════════════════════════════════════════════════════
+var lastQuizText='';
+function genQuizQuestions(){var ov=document.getElementById('quiz-ov');if(ov)ov.classList.add('open');}
+async function callQuizAI(){
+  var t=document.getElementById('f-title').value||document.getElementById('f-subject').value;
+  var g=document.getElementById('f-grade').value||'';
+  var qc=document.getElementById('q-count').value,qt=document.getElementById('q-type').value,ql=document.getElementById('q-level').value;
+  var btn=document.getElementById('quiz-btntxt');btn.textContent='⏳ جارٍ التوليد...';
+  document.getElementById('quiz-res').style.display='none';
+  try{
+    lastQuizText = await callProvider([{role:'user',content:'اكتب '+qc+' أسئلة نوع "'+qt+'" مستوى "'+ql+'" لدرس: "'+t+'"'+(g?' للصف '+g:'')+'. مع الإجابات في النهاية.'}], null, 1500);
+    document.getElementById('quiz-out').innerHTML='<div style="white-space:pre-wrap;font-size:13px;line-height:1.9;direction:rtl">'+lastQuizText+'</div>';
+    document.getElementById('quiz-res').style.display='block';toast('✅ تم توليد الأسئلة');
+  }catch(e){toast('خطأ: '+(e.message||''),'❌');}
+  btn.textContent='توليد الأسئلة';
+}
+function copyQuiz(){navigator.clipboard.writeText(lastQuizText).then(function(){toast('تم النسخ 📋');});}
+
+// ════════════════════════════════════════════════════════════════
+// أنشطة تفاعلية
+// ════════════════════════════════════════════════════════════════
+var lastActText='';
+function suggestActivities(){var ov=document.getElementById('act-ov');if(ov)ov.classList.add('open');}
+async function callActivitiesAI(){
+  var t=document.getElementById('f-title').value||document.getElementById('f-subject').value;
+  var g=document.getElementById('f-grade').value||'';
+  var at=document.getElementById('act-type').value,atm=document.getElementById('act-time').value;
+  var btn=document.getElementById('act-btntxt');btn.textContent='⏳ جارٍ التوليد...';
+  document.getElementById('act-res').style.display='none';
+  try{
+    lastActText = await callProvider([{role:'user',content:'اقترح 3 أنشطة "'+at+'" مدة كل منها '+atm+' لدرس "'+t+'"'+(g?' للصف '+g:'')+'، مع الوصف وخطوات التنفيذ.'}], null, 1200);
+    document.getElementById('act-out').innerHTML='<div style="white-space:pre-wrap;font-size:13px;line-height:1.9;direction:rtl">'+lastActText+'</div>';
+    document.getElementById('act-res').style.display='block';toast('✅ تم اقتراح الأنشطة');
+  }catch(e){toast('خطأ: '+(e.message||''),'❌');}
+  btn.textContent='اقتراح الأنشطة';
+}
+function applyActivity(){if(!lastActText)return;var el=document.getElementById('f-enrich');if(el){el.value=(el.value?el.value+'\n\n':'')+lastActText.slice(0,500);prog();}document.getElementById('act-ov').classList.remove('open');toast('✅ تمت الإضافة للإثراء');}
+
+// ════════════════════════════════════════════════════════════════
+// ترجمة
+// ════════════════════════════════════════════════════════════════
+var lastTranslation='';
+function translatePlan(){var ov=document.getElementById('tr-ov');if(ov)ov.classList.add('open');}
+async function callTranslateAI(){
+  var d=collect();var btn=document.getElementById('tr-btntxt');btn.textContent='⏳ جارٍ الترجمة...';
+  document.getElementById('tr-res').style.display='none';
+  var parts=['Translate to professional English:','School: Beit Awa Secondary School','Subject: '+d.subject,'Grade: '+d.grade,'Title: '+d.title,'Objectives: '+d.objs.map(function(o){return o.text;}).join(' | '),'Intro: '+d.intro,'Steps: '+d.steps.join(' | '),'Formative: '+d.formtext,'Summative: '+d.sumtext,'HW: '+d.hw,'Provide a complete formal lesson plan in English.'];
+  try{
+    lastTranslation = await callProvider([{role:'user',content:parts.join('\n')}], null, 1800);
+    document.getElementById('tr-out').textContent=lastTranslation;
+    document.getElementById('tr-res').style.display='block';toast('Translation complete ✅');
+  }catch(e){toast('Error: '+(e.message||''),'❌');}
+  btn.textContent='ترجمة الآن';
+}
+function copyTranslation(){navigator.clipboard.writeText(lastTranslation).then(function(){toast('Copied 📋');});}
+
+// ════════════════════════════════════════════════════════════════
+// واتساب
+// ════════════════════════════════════════════════════════════════
+function shareWhatsApp(){
+  var t=document.getElementById('f-title').value||'درس';
+  var s=document.getElementById('f-subject').value||'';
+  var g=document.getElementById('f-grade').value||'';
+  var teacher=document.getElementById('f-teacher').value||'';
+  var school='مدرسة ذكور بيت عوا الثانوية';
+  var objs=[];document.querySelectorAll('#objlist .or2 input').forEach(function(i){if(i.value)objs.push('• '+i.value);});
+  var steps=[];document.querySelectorAll('#stepslist textarea').forEach(function(ta,i){if(ta.value)steps.push((i+1)+'. '+ta.value.slice(0,70));});
+  var hw=(document.getElementById('f-hw')||{}).value||'';
+  var lines=['📚 *خطة الدرس اليومية*','🏫 *'+school+'*','━━━━━━━━━━━━━━━'];
+  var semester=(document.getElementById('f-semester')||{}).value||'';
+  if(teacher)lines.push('👨 المعلم: '+teacher);
+  if(semester)lines.push('📚 الفصل: '+semester);
+  if(s)lines.push('📖 المادة: '+s);if(g)lines.push('🎓 الصف: '+g);
+  lines.push('📝 الدرس: *'+t+'*','━━━━━━━━━━━━━━━');
+  if(objs.length){lines.push('🎯 *الأهداف:*');objs.slice(0,3).forEach(function(o){lines.push(o);});}
+  if(steps.length){lines.push('📋 *خطوات الدرس:*');steps.slice(0,3).forEach(function(s){lines.push(s);});}
+  if(hw)lines.push('📚 *الواجب:* '+hw.slice(0,80));
+  lines.push('━━━━━━━━━━━━━━━','_تم إعدادها بالذكاء الاصطناعي_');
+  window.open('https://wa.me/?text='+encodeURIComponent(lines.join('\n')),'_blank');
+}
+
+
+// ════════════════════════════════════════════════════════════════
+// الساعة الحية — توقيت فلسطين (مع التوفيق الصيفي/الشتوي)
+// ════════════════════════════════════════════════════════════════
+function getPalestineTime(date){
+  // فلسطين: UTC+2 شتاءً، UTC+3 صيفاً (آخر جمعة مارس → آخر جمعة أكتوبر)
+  var now = date || new Date();
+  // حساب التوقيت الصيفي الفلسطيني
+  var year = now.getUTCFullYear();
+  // آخر جمعة مارس
+  function lastFriday(year, month){
+    var d = new Date(Date.UTC(year, month, 31));
+    while(d.getUTCDay() !== 5) d.setUTCDate(d.getUTCDate()-1);
+    d.setUTCHours(0,0,0,0);
+    return d;
+  }
+  var dstStart = lastFriday(year, 2); // مارس
+  var dstEnd   = lastFriday(year, 9); // أكتوبر
+  var offset = (now >= dstStart && now < dstEnd) ? 3 : 2;
+  var local = new Date(now.getTime() + offset*3600000);
+  var h = local.getUTCHours(), m = local.getUTCMinutes(), s = local.getUTCSeconds();
+  var ampm = h >= 12 ? 'م' : 'ص';
+  var h12 = h % 12 || 12;
+  return (h12<10?'0':'')+h12+':'+(m<10?'0':'')+m+':'+(s<10?'0':'')+s+' '+ampm;
+}
+
+function getPalestineDateFull(){
+  var now = new Date();
+  var year = now.getUTCFullYear();
+  function lastFriday(y,mo){var d=new Date(Date.UTC(y,mo,31));while(d.getUTCDay()!==5)d.setUTCDate(d.getUTCDate()-1);d.setUTCHours(0,0,0,0);return d;}
+  var dstStart=lastFriday(year,2),dstEnd=lastFriday(year,9);
+  var offset=(now>=dstStart&&now<dstEnd)?3:2;
+  var local=new Date(now.getTime()+offset*3600000);
+  var days=['الأحد','الاثنين','الثلاثاء','الأربعاء','الخميس','الجمعة','السبت'];
+  var months=['يناير','فبراير','مارس','أبريل','مايو','يونيو','يوليو','أغسطس','سبتمبر','أكتوبر','نوفمبر','ديسمبر'];
+  return days[local.getUTCDay()]+' '+local.getUTCDate()+' '+months[local.getUTCMonth()]+' '+local.getUTCFullYear();
+}
+
+// تحديث الساعة كل ثانية
+function updateLiveClock(){
+  var el=document.getElementById('live-clock');
+  var el2=document.getElementById('live-date');
+  if(el) el.textContent=getPalestineTime();
+  if(el2) el2.textContent=getPalestineDateFull();
+}
+setInterval(updateLiveClock, 1000);
+
+
+function resetHamzaKey(){
+  if(confirm('مسح مفتاح API لأ. حمزة؟')){
+    localStorage.removeItem('api_key_hamza');
+    toast('✅ تم مسح المفتاح — سيُطلب عند التوليد التالي');
+  }
+}
+
+// ════════════════════════════════════════════════════════════════
+// نظام المفاتيح المجانية — Gemini + Groq
+// ════════════════════════════════════════════════════════════════
+var CURRENT_PROVIDER = localStorage.getItem('ai_provider') || 'gemini';
+var selectedProvider = CURRENT_PROVIDER;
+
+function selectProvider(p){
+  selectedProvider = p;
+  var hints = {
+    gemini: '⚡ احصل على مفتاح <strong>Google Gemini مجاني</strong>:<br>اذهب لـ <strong>aistudio.google.com</strong> → Get API Key → Create API Key',
+    groq:   '🤖 احصل على مفتاح <strong>Groq مجاني</strong>:<br>اذهب لـ <strong>console.groq.com</strong> → API Keys → Create API Key'
+  };
+  var labels = {
+    gemini: '🔑 مفتاح Google Gemini API',
+    groq:   '🔑 مفتاح Groq API'
+  };
+  var el = document.getElementById('key-hint');
+  if(el) el.innerHTML = hints[p] || '';
+  var lbl = document.getElementById('key-label');
+  if(lbl) lbl.textContent = labels[p] || '';
+  // تحديث الأزرار
+  ['gemini','groq'].forEach(function(x){
+    var btn = document.getElementById('btn-'+x);
+    if(btn){
+      btn.style.borderColor = x===p ? '#4285f4' : '#e2e8f0';
+      btn.style.background  = x===p ? '#f0f7ff' : '#f8f8f8';
+    }
+  });
+  // عرض المفتاح المحفوظ إن وجد
+  var teacher = (document.getElementById('setup-teacher')||{}).value || '';
+  var saved = getSavedKey(p, teacher);
+  var inp = document.getElementById('setup-key');
+  if(inp) inp.value = saved ? '••••••••••••••••' : '';
+}
+
+function getSavedKey(provider, teacher){
+  var suffix = teacher.indexOf('حمزة')>=0 ? '_hamza' : '_khalil';
+  return localStorage.getItem('api_key_'+provider+suffix) || '';
+}
+
+function saveSetup(){
+  var teacher  = document.getElementById('setup-teacher').value;
+  var keyVal   = document.getElementById('setup-key').value.trim();
+  var provider = selectedProvider;
+
+  if(!keyVal || keyVal === '••••••••••••••••'){
+    // تحقق إن كان محفوظاً مسبقاً
+    if(!getSavedKey(provider, teacher)){
+      toast('أدخل المفتاح أولاً','⚠️'); return;
+    }
+  } else {
+    // حفظ المفتاح الجديد
+    var suffix = teacher.indexOf('حمزة')>=0 ? '_hamza' : '_khalil';
+    localStorage.setItem('api_key_'+provider+suffix, keyVal);
+  }
+
+  localStorage.setItem('ai_provider', provider);
+  localStorage.setItem('lp_teacher', teacher);
+  CURRENT_PROVIDER = provider;
+
+  // تحديث اسم المعلم في التطبيق
+  var te = document.getElementById('f-teacher');
+  if(te && te.tagName==='SELECT'){
+    for(var i=0;i<te.options.length;i++){
+      if(te.options[i].value===teacher){ te.selectedIndex=i; break; }
+    }
+  }
+
+  document.getElementById('setup-ov').style.display='none';
+  toast('✅ تم الإعداد — الذكاء الاصطناعي جاهز!');
+  updateProviderBadge();
+}
+
+function checkSetup(){ /* disabled - key is embedded */ }
+
+function updateProviderBadge(){
+  var st = document.getElementById('auto-status');
+  var provider = localStorage.getItem('ai_provider') || 'gemini';
+  var badge = provider==='gemini' ? '⚡ Gemini' : '🤖 Groq';
+  if(st && st.textContent.indexOf('جاهز')>=0){
+    // لا تغيّر الحالة إذا كان يعمل
+  }
+}
+
+function getApiKey(){
+  var teacher = '';
+  var te = document.getElementById('f-teacher');
+  if(te) teacher = te.tagName==='SELECT' ? (te.options[te.selectedIndex]?te.options[te.selectedIndex].text:'') : te.value;
+  var provider = localStorage.getItem('ai_provider') || 'gemini';
+  var suffix = teacher.indexOf('حمزة')>=0 ? '_hamza' : '_khalil';
+  return localStorage.getItem('api_key_'+provider+suffix) || '';
+}
+
+// ══ استدعاء AI حسب المزود ══
+async function callProvider(messages, systemPrompt, maxTokens){
+  // ══ يجرب Gemini أولاً ← ثم Groq احتياطياً ══
+  var teacher = '';
+  var te = document.getElementById('f-teacher');
+  if(te) teacher = te.tagName==='SELECT'
+    ? (te.options[te.selectedIndex]||{}).text||'' : te.value||'';
+  var suffix = teacher.indexOf('حمزة')>=0 ? '_hamza' : '_khalil';
+
+  var gKey = localStorage.getItem('gemini_key'+suffix)||'';
+  var qKey = localStorage.getItem('groq_key'+suffix)||'';
+
+  if(!gKey && !qKey){
+    showKeySetup();
+    throw new Error('أدخل المفتاح أولاً');
+  }
+
+  // ── Gemini أولاً ──
+  if(gKey){
+    try{
+      var r = await callGemini(messages, systemPrompt, maxTokens||2000, gKey);
+      showBadge('⚡ Gemini','#4285f4');
+      return r;
+    }catch(e){
+      console.warn('Gemini failed:',e.message);
+      if(!qKey) throw new Error('Gemini: '+e.message);
+    }
+  }
+
+  // ── Groq احتياطي ──
+  if(qKey){
+    var r2 = await callGroq(messages, systemPrompt, maxTokens||2000, qKey);
+    showBadge('🤖 Groq','#f59e0b');
+    return r2;
+  }
+}
+
+async function callGemini(messages, sys, maxT, key){
+  var contents = messages.map(function(m){
+    return {role:m.role==='assistant'?'model':'user', parts:[{text:m.content}]};
+  });
+  var body = {
+    contents: contents,
+    generationConfig: {maxOutputTokens:maxT, temperature:0.7}
+  };
+  if(sys) body.systemInstruction = {parts:[{text:sys}]};
+  var res = await fetch(
+    'https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key='+key,
+    {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify(body)}
+  );
+  var data = await res.json();
+  if(data.error) throw new Error(data.error.message);
+  return ((data.candidates||[{}])[0].content||{parts:[{text:''}]}).parts[0].text||'';
+}
+
+async function callGroq(messages, sys, maxT, key){
+  var msgs = sys ? [{role:'system',content:sys}].concat(messages) : messages;
+  var res = await fetch('https://api.groq.com/openai/v1/chat/completions',{
+    method:'POST',
+    headers:{'Content-Type':'application/json','Authorization':'Bearer '+key},
+    body:JSON.stringify({
+      model:'llama-3.3-70b-versatile',
+      messages:msgs,
+      max_tokens:maxT||2000,
+      temperature:0.7
+    })
+  });
+  var data = await res.json();
+  if(data.error) throw new Error(data.error.message||JSON.stringify(data.error));
+  return ((data.choices||[{}])[0].message||{}).content||'';
+}
+
+function getApiKey(){
+  var te=document.getElementById('f-teacher');
+  var teacher=te?(te.tagName==='SELECT'?(te.options[te.selectedIndex]||{}).text||'':te.value||''):'';
+  var suffix=teacher.indexOf('حمزة')>=0?'_hamza':'_khalil';
+  return localStorage.getItem('gemini_key'+suffix)||localStorage.getItem('groq_key'+suffix)||'';
+}
+
+function showBadge(name,color){
+  var el=document.getElementById('provider-badge');
+  if(!el){
+    el=document.createElement('span');
+    el.id='provider-badge';
+    el.style.cssText='font-size:10px;padding:2px 8px;border-radius:10px;color:#fff;font-weight:700;font-family:Tajawal,sans-serif;margin-right:6px';
+    var b=document.getElementById('auto-banner');
+    if(b)b.insertBefore(el,b.firstChild);
+  }
+  el.textContent=name; el.style.background=color;
+}
+
+function xhrCall(key, body){
+  return new Promise(function(resolve, reject){
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST','https://api.anthropic.com/v1/messages', true);
+    xhr.setRequestHeader('Content-Type','application/json');
+    xhr.setRequestHeader('anthropic-version','2023-06-01');
+    xhr.setRequestHeader('x-api-key', key);
+    xhr.timeout = 60000;
+    xhr.onload = function(){
+      try{
+        var data = JSON.parse(xhr.responseText);
+        if(data.error) reject(new Error(data.error.message));
+        else resolve((data.content||[]).map(function(x){return x.text||'';}).join(''));
+      }catch(e){ reject(e); }
+    };
+    xhr.onerror = function(){ reject(new Error('تعذّر الاتصال — تحقق من الإنترنت')); };
+    xhr.ontimeout = function(){ reject(new Error('انتهت مهلة الاتصال')); };
+    xhr.send(JSON.stringify(body));
+  });
+}
+
+function getApiKey(){ return 'sk-ant-api03-jCvnFGhpPYm0WZBq_FhJi2cGTrAoWB44LXjWWRkZKAeDvbEgZ-wJWsQBxUuOcyLjGY0p3VIrJIRjpJLxpE3JMw-c7lsHQAA'; }
+
+function getApiKey(){ return 'sk-ant-api03-jCvnFGhpPYm0WZBq_FhJi2cGTrAoWB44LXjWWRkZKAeDvbEgZ-wJWsQBxUuOcyLjGY0p3VIrJIRjpJLxpE3JMw-c7lsHQAA'; }
+
+// ════════════════════════════════════════════════════════════════
+// المنهاج الفلسطيني — قاعدة بيانات ذكية
+// Claude — بصمة التميز التعليمي
+// ════════════════════════════════════════════════════════════════
+var PALESTINIAN_CURRICULUM = {
+
+  // اللغة العربية — دروس معروفة
+  'arabic': {
+    // الصف السادس
+    '6': ['لأمي — كمال ناصر','الوطن','البيئة','الصداقة','العمل والإنتاج','الأسرة'],
+    // الصف السابع
+    '7': ['لأمي — كمال ناصر','فلسطيني أنا','الأرض','الكتاب','المعلم'],
+    // الصف الثامن
+    '8': ['القدس في القلب','الشهيد','التضحية','العلم نور','أمتي'],
+    // الصف التاسع
+    '9': ['فلسطين الحبيبة','الثورة','الصمود','الحرية','المقاومة'],
+    // الثانوي
+    '10': ['مقدمة ابن خلدون','الشعر الجاهلي','المعلقات'],
+    '11': ['الأدب الأندلسي','ابن زيدون','الولادة بنت المستكفي'],
+    '12': ['الأدب الحديث','محمود درويش','نازك الملائكة','بدر شاكر السياب']
+  },
+
+  // شعراء فلسطينيون مرتبطون بالمنهاج
+  'poets': {
+    'كمال ناصر': {
+      bio: 'شاعر فلسطيني (1924-1973) وُلد في بيرزيت، استُشهد في بيروت. عُرف بقصائده الوطنية والإنسانية.',
+      poems: ['لأمي','الوطن','فلسطين','الثورة','العودة'],
+      style: 'شعر رومانسي وطني، يجمع بين الحنين والمقاومة',
+      period: 'المعاصر'
+    },
+    'محمود درويش': {
+      bio: 'شاعر فلسطيني (1941-2008) رمز المقاومة والهوية.',
+      poems: ['على هذه الأرض','جدارية','أثر الفراشة','أريد من هذا الزمن'],
+      style: 'شعر حديث يمزج بين الرمزية والواقعية',
+      period: 'المعاصر'
+    },
+    'إبراهيم طوقان': {
+      bio: 'شاعر فلسطيني (1905-1941) كاتب النشيد الوطني.',
+      poems: ['موطني','الفدائي','قبر أخي'],
+      style: 'شعر عمودي وطني',
+      period: 'الحديث'
+    }
+  },
+
+  // قصيدة "لأمي" تفصيلياً
+  'poem_lami': {
+    title: 'لأمي',
+    poet: 'كمال ناصر',
+    grade: 'السادس / السابع',
+    theme: 'الحب والوفاء للأم والوطن',
+    mainIdeas: [
+      'تمجيد الأم ورفع مكانتها',
+      'الحنين والارتباط العاطفي بالأم',
+      'الأم رمز للوطن والانتماء',
+      'الوفاء والعرفان بالجميل'
+    ],
+    objectives: {
+      cognitive: [
+        'أن يتعرف الطالب على الشاعر كمال ناصر وسيرته',
+        'أن يفهم الأفكار الرئيسية والفرعية في القصيدة',
+        'أن يشرح معاني المفردات الصعبة ويستخلص الصور الجمالية'
+      ],
+      skills: [
+        'أن يقرأ القصيدة قراءة معبّرة تراعي الضبط والأداء',
+        'أن يحلل الصور البيانية والأساليب البلاغية في القصيدة'
+      ],
+      affective: [
+        'أن يعبّر عن مشاعر الحب والتقدير تجاه أمه',
+        'أن يربط بين حب الأم وحب الوطن'
+      ]
+    },
+    vocab: ['التمهيد','الحنين','الوفاء','الأشواق','الحضن','الدفء'],
+    beautifulImages: [
+      'تشبيه الأم بالشمس الدافئة',
+      'الاستعارة في وصف دفء الأم',
+      'التكرار لتأكيد معنى الحب'
+    ],
+    intro: 'نبدأ بسؤال: من أحب الناس إليك؟ ثم نتحدث عن مكانة الأم في الإسلام والثقافة الفلسطينية، وننتقل للشاعر كمال ناصر الذي جمع في هذه القصيدة حب الأم وحب الوطن.',
+    steps: [
+      'التمهيد: سؤال تحفيزي عن مكانة الأم + نبذة عن الشاعر كمال ناصر وشهادته',
+      'القراءة النموذجية: قراءة المعلم القصيدة كاملة بأداء معبّر',
+      'شرح المفردات: استخراج الكلمات الصعبة وشرحها مع الطلاب',
+      'تحليل الأفكار: مناقشة المعنى الإجمالي لكل مقطع',
+      'الصور الجمالية: استخراج الاستعارات والتشبيهات وتحليلها',
+      'التقويم: قراءة فردية للطلاب + أسئلة فهم واستيعاب'
+    ],
+    formative: 'أسئلة شفهية بعد كل مقطع: ما الفكرة الرئيسية؟ ما الصورة الجمالية؟',
+    summative: 'كتابة فقرة تعبيرية: "اكتب عن أمك مستوحياً أسلوب كمال ناصر"',
+    hw: 'حفظ أبيات مختارة من القصيدة وكتابة تعبير قصير عن الأم'
+  }
+};
+
+// ══ كشف الدرس الفلسطيني وتطبيق المنهاج ══
+function detectPalestinianLesson(title, subject){
+  if(!title) return null;
+  var t = title.toLowerCase();
+
+  // قصيدة لأمي
+  if(t.indexOf('لأمي')>=0 || t.indexOf('امي')>=0 || (t.indexOf('كمال')>=0&&t.indexOf('ناصر')>=0)){
+    return 'poem_lami';
+  }
+  return null;
+}
+
+// ══ تحسين الـ prompt بالمنهاج الفلسطيني ══
+function enrichPromptWithCurriculum(prompt, title, subject, grade){
+  var lesson = detectPalestinianLesson(title, subject);
+
+  if(lesson === 'poem_lami'){
+    var d = PALESTINIAN_CURRICULUM.poem_lami;
+    var poet = PALESTINIAN_CURRICULUM.poets['كمال ناصر'];
+    prompt += '\n\n[معلومات من المنهاج الفلسطيني]'
+      +'\nالقصيدة: "لأمي" للشاعر الشهيد كمال ناصر'
+      +'\nنبذة عن الشاعر: '+poet.bio
+      +'\nالموضوع الرئيسي: '+d.theme
+      +'\nالأفكار الرئيسية: '+d.mainIdeas.join(' | ')
+      +'\nالمفردات المقررة: '+d.vocab.join(', ')
+      +'\nالصور الجمالية: '+d.beautifulImages.join(' | ')
+      +'\nاستخدم هذه المعلومات لبناء خطة درس احترافية متكاملة مرتبطة بالمنهاج الفلسطيني.';
+    toast('📚 تم التعرف على درس من المنهاج الفلسطيني: لأمي — كمال ناصر');
+  }
+
+  return prompt;
+}
+
+// ══ ربط enrichPromptWithCurriculum بـ triggerAutoGen ══
+var _origTrigger = triggerAutoGen;
+triggerAutoGen = function(){
+  // نستدعي الأصلية لكن نعترض الـ prompt
+  var s=document.getElementById('f-subject').value;
+  var g=document.getElementById('f-grade').value;
+  var t=document.getElementById('f-title').value.trim();
+  var teacher=document.getElementById('f-teacher').value;
+  var dur=document.getElementById('f-dur').value;
+  if(!s||s.indexOf('--')>=0){toast('اختر المادة أولاً','⚠️');return;}
+  if(!g||g.indexOf('--')>=0){toast('اختر الصف أولاً','⚠️');return;}
+  if(!t){toast('أدخل عنوان الدرس','⚠️');return;}
+  lastAutoKey=s+'|'+g+'|'+t; autoTriggered=true;
+  var prompt='أعدّ خطة درس يومية احترافية كاملة:\nالمادة: '+s+'\nالصف: '+g+'\nالدرس: '+t
+    +(teacher?'\nالمعلم: '+teacher:'')+(dur?'\nمدة الحصة: '+dur:'')
+    +'\nالمدرسة: مدرسة ذكور بيت عوا الثانوية - مديرية التربية / جنوب الخليل'
+    +'\nاملأ جميع الأقسام بتفصيل عالٍ ومناسب للمرحلة الدراسية.';
+  // إثراء الـ prompt بالمنهاج الفلسطيني
+  prompt = enrichPromptWithCurriculum(prompt, t, s, g);
+  autoGenCall(prompt);
+};
+
+
+// ════════════════════════════════════════════════════════════════
+// نظام الطباعة — يعمل على الملفات المحلية
+// ════════════════════════════════════════════════════════════════
+
+function buildPrintHTML(){
+  function gv(id){
+    var el=document.getElementById(id);
+    if(!el)return '';
+    if(el.tagName==='SELECT')return el.options[el.selectedIndex]?el.options[el.selectedIndex].text:'';
+    return el.value||'';
+  }
+  var school=gv('f-school')||'مدرسة ذكور بيت عوا الثانوية';
+  var ministry=gv('f-ministry')||'مديرية التربية والتعليم / جنوب الخليل';
+  var teacher=gv('f-teacher')||'';
+  var semester=gv('f-semester')||'الفصل الأول';
+  var subject=gv('f-subject')||'';
+  var grade=gv('f-grade')||'';
+  var title=gv('f-title')||'';
+  var dateVal=gv('f-date')||'';
+  var dur=gv('f-dur')||'';
+  var prereq=gv('f-prereq')||'';
+  var tools=gv('f-tools')||'';
+  var intro=gv('f-intro')||'';
+  var introsel=gv('f-introsel')||'';
+  var strat=gv('f-strat')||'';
+  var org=gv('f-org')||'';
+  var formtool=gv('f-formtool')||'';
+  var formtime=gv('f-formtime')||'';
+  var formtext=gv('f-formtext')||'';
+  var sumtype=gv('f-sumtype')||'';
+  var sumtext=gv('f-sumtext')||'';
+  var hw=gv('f-hw')||'';
+  var enrich=gv('f-enrich')||'';
+  var rem=gv('f-rem')||'';
+
+  var dateF='';
+  if(dateVal){try{dateF=new Date(dateVal).toLocaleDateString('ar-SA',{weekday:'long',year:'numeric',month:'long',day:'numeric'});}catch(e){dateF=dateVal;}}
+  var nowT=typeof getPalestineTime==='function'?getPalestineTime():'';
+
+  // الأهداف
+  var objsH='';
+  document.querySelectorAll('#objlist .or2').forEach(function(r){
+    var b=r.querySelector('.bdg'),i=r.querySelector('input');
+    if(i&&i.value.trim()){
+      var cls=b?b.textContent:'';
+      var col=cls==='معرفي'?'#1e40af':cls==='مهاري'?'#065f46':'#9d174d';
+      var bg=cls==='معرفي'?'#dbeafe':cls==='مهاري'?'#d1fae5':'#fce7f3';
+      objsH+='<div style="display:flex;align-items:flex-start;gap:6px;margin-bottom:5px">'
+        +'<span style="background:'+bg+';color:'+col+';padding:1px 8px;border-radius:10px;font-size:10px;font-weight:700;white-space:nowrap;flex-shrink:0">'+cls+'</span>'
+        +'<span style="font-size:12px;line-height:1.6">'+i.value+'</span></div>';
+    }
+  });
+
+  // الخطوات
+  var stepsH='';
+  document.querySelectorAll('#stepslist textarea').forEach(function(t,i){
+    if(t.value.trim()){
+      stepsH+='<div style="display:flex;gap:8px;margin-bottom:7px;align-items:flex-start">'
+        +'<div style="background:#1a3a5c;color:#fff;width:22px;height:22px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;font-weight:700;flex-shrink:0;margin-top:1px">'+(i+1)+'</div>'
+        +'<div style="font-size:12px;line-height:1.7;flex:1">'+t.value.replace(/\n/g,'<br>')+'</div></div>';
+    }
+  });
+
+  var html='<!DOCTYPE html><html dir="rtl" lang="ar"><head><meta charset="UTF-8">'
+    +'<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700;900&family=Amiri:wght@400;700&display=swap" rel="stylesheet">'
+    +'<style>'
+    +'*{margin:0;padding:0;box-sizing:border-box}'
+    +'body{font-family:Tajawal,sans-serif;direction:rtl;color:#111;background:#fff;font-size:12px}'
+    +'.page{padding:10mm}'
+    +'.hdr{text-align:center;border-bottom:3px solid #1a3a5c;padding-bottom:10px;margin-bottom:12px}'
+    +'.hdr .min{font-size:10px;color:#c5962b;font-weight:700;margin-bottom:2px}'
+    +'.hdr .sch{font-family:Amiri,serif;font-size:20px;font-weight:700;color:#1a3a5c;margin-bottom:4px}'
+    +'.hdr .badge{background:#1a3a5c;color:#fff;padding:3px 14px;border-radius:3px;font-size:11px;font-weight:700;display:inline-block}'
+    +'.hdr .copy{font-size:9px;color:#999;margin-top:4px}'
+    +'.info{display:grid;grid-template-columns:1fr 1fr 1fr;gap:5px;margin-bottom:10px}'
+    +'.ibox{border:1px solid #ddd;border-radius:5px;padding:5px 8px}'
+    +'.ibox .lbl{font-size:9px;color:#1a3a5c;font-weight:700;margin-bottom:1px}'
+    +'.ibox .val{font-size:11px;font-weight:700}'
+    +'.sec{border:1px solid #ccc;border-radius:6px;margin-bottom:8px;overflow:hidden;page-break-inside:avoid}'
+    +'.sec-hd{background:linear-gradient(135deg,#1a3a5c,#2d6a9f);color:#fff;padding:5px 10px;font-size:11px;font-weight:700}'
+    +'.sec-bd{padding:8px 10px}'
+    +'.two{display:grid;grid-template-columns:1fr 1fr;gap:8px}'
+    +'.fld .lbl{font-size:9px;color:#666;font-weight:700;margin-bottom:2px}'
+    +'.fld .val{font-size:11px;line-height:1.7;border-bottom:1px dashed #eee;padding-bottom:3px;min-height:16px}'
+    +'@media print{@page{margin:8mm;size:A4}body{font-size:11px}}'
+    +'</style></head><body><div class="page">'
+    // ترويسة
+    +'<div class="hdr">'
+    +'<div class="min">وزارة التربية والتعليم العالي — فلسطين</div>'
+    +'<div class="min">'+ministry+'</div>'
+    +'<div class="sch">'+school+'</div>'
+    +'<div class="badge">خطة درس يومية — العام الدراسي 2024/2025</div>'
+    +'<div class="copy">إعداد وتصميم: أ. خليل محمد خليل عطيله &nbsp;|&nbsp; © جميع الحقوق محفوظة &nbsp;|&nbsp; ✨ Claude AI &nbsp;|&nbsp; '+nowT+'</div>'
+    +'</div>'
+    // معلومات
+    +'<div class="info">'
+    +'<div class="ibox"><div class="lbl">👨🏫 المعلم</div><div class="val">'+teacher+'</div></div>'
+    +'<div class="ibox"><div class="lbl">📖 المادة</div><div class="val">'+subject+'</div></div>'
+    +'<div class="ibox"><div class="lbl">🎓 الصف</div><div class="val">'+grade+'</div></div>'
+    +'<div class="ibox"><div class="lbl">📝 الدرس</div><div class="val">'+title+'</div></div>'
+    +'<div class="ibox"><div class="lbl">📅 التاريخ</div><div class="val">'+dateF+'</div></div>'
+    +'<div class="ibox"><div class="lbl">📚 الفصل | ⏱️ المدة</div><div class="val">'+semester+' | '+dur+'</div></div>'
+    +'</div>'
+    // الأهداف
+    +(objsH?'<div class="sec"><div class="sec-hd">🎯 أهداف الدرس</div><div class="sec-bd">'+objsH+'</div></div>':'')
+    // متطلبات ووسائل
+    +((prereq||tools)?'<div class="sec"><div class="sec-hd">📚 المتطلبات والوسائل</div><div class="sec-bd"><div class="two"><div class="fld"><div class="lbl">المتطلبات السابقة</div><div class="val">'+prereq+'</div></div><div class="fld"><div class="lbl">الوسائل التعليمية</div><div class="val">'+tools+'</div></div></div></div></div>':'')
+    // التمهيد
+    +(intro?'<div class="sec"><div class="sec-hd">🌅 التمهيد</div><div class="sec-bd"><div class="fld"><div class="lbl">الأسلوب: '+introsel+'</div><div class="val">'+intro.replace(/\n/g,'<br>')+'</div></div></div></div>':'')
+    // عرض الدرس
+    +(stepsH?'<div class="sec"><div class="sec-hd">📊 عرض الدرس</div><div class="sec-bd">'+(strat?'<div style="font-size:10px;color:#444;margin-bottom:6px"><strong>الاستراتيجية:</strong> '+strat+' &nbsp;|&nbsp; <strong>تنظيم الصف:</strong> '+org+'</div>':'')+stepsH+'</div></div>':'')
+    // التقويم التكويني
+    +(formtext?'<div class="sec"><div class="sec-hd">🔍 التقويم التكويني</div><div class="sec-bd"><div style="font-size:10px;color:#444;margin-bottom:4px"><strong>الأداة:</strong> '+formtool+' &nbsp;|&nbsp; <strong>التوقيت:</strong> '+formtime+'</div><div style="font-size:12px;line-height:1.7">'+formtext.replace(/\n/g,'<br>')+'</div></div></div>':'')
+    // التقويم الختامي
+    +(sumtext?'<div class="sec"><div class="sec-hd">✅ التقويم الختامي</div><div class="sec-bd"><div style="font-size:10px;color:#444;margin-bottom:4px"><strong>النوع:</strong> '+sumtype+'</div><div style="font-size:12px;line-height:1.7">'+sumtext.replace(/\n/g,'<br>')+'</div></div></div>':'')
+    // المتابعة
+    +((hw||enrich||rem)?'<div class="sec"><div class="sec-hd">📓 التقويم والمتابعة</div><div class="sec-bd"><div class="two">'
+    +(hw?'<div class="fld"><div class="lbl">📚 الواجب</div><div class="val">'+hw.replace(/\n/g,'<br>')+'</div></div>':'')
+    +(enrich?'<div class="fld"><div class="lbl">🌟 الإثراء</div><div class="val">'+enrich.replace(/\n/g,'<br>')+'</div></div>':'')
+    +(rem?'<div class="fld"><div class="lbl">🩹 العلاج</div><div class="val">'+rem.replace(/\n/g,'<br>')+'</div></div>':'')
+    +'</div></div></div>':'')
+    +'</div></body></html>';
+  return html;
+}
+
+function doPrint(){
+  // عرض معاينة داخل التطبيق
+  var html = buildPrintHTML();
+  var ov = document.getElementById('preview-ov');
+  var content = document.getElementById('preview-content');
+  if(!ov||!content) return;
+  content.innerHTML = html.replace(/<html[^>]*>|<\/html>|<!DOCTYPE[^>]*>|<head>.*?<\/head>/gis,'');
+  ov.style.display='block';
+  ov.scrollTop=0;
+  toast('📄 معاينة جاهزة — اضغط 🖨️ طباعة');
+}
+
+function browserPrint(){
+  // محاولة الطباعة المباشرة
+  var html = buildPrintHTML();
+  try{
+    // طريقة 1: iframe مخفي
+    var iframe=document.getElementById('print-iframe');
+    if(!iframe){
+      iframe=document.createElement('iframe');
+      iframe.id='print-iframe';
+      iframe.style.cssText='position:fixed;top:-9999px;left:-9999px;width:210mm;height:297mm;border:none;opacity:0;';
+      document.body.appendChild(iframe);
+    }
+    var d=iframe.contentDocument||iframe.contentWindow.document;
+    d.open();d.write(html);d.close();
+    setTimeout(function(){
+      try{
+        iframe.contentWindow.focus();
+        iframe.contentWindow.print();
+      }catch(e){
+        // طريقة 2: Blob URL
+        tryBlobPrint(html);
+      }
+    },600);
+  }catch(e){
+    tryBlobPrint(html);
+  }
+}
+
+function tryBlobPrint(html){
+  try{
+    var blob=new Blob([html],{type:'text/html;charset=utf-8'});
+    var url=URL.createObjectURL(blob);
+    var a=document.createElement('a');
+    a.href=url;
+    a.download='خطة_درس_'+((document.getElementById('f-title')||{}).value||'بيت_عوا')+'.html';
+    a.click();
+    URL.revokeObjectURL(url);
+    toast('⬇️ تم تحميل الخطة — افتحها واطبعها كـ PDF');
+  }catch(e){
+    toast('💡 انسخ الخطة من المشاركة وأرسلها للواتساب','📋');
+  }
+}
+
+function closePrintPreview(){
+  var ov=document.getElementById('preview-ov');
+  if(ov) ov.style.display='none';
+}
+
+function shareAsText(){
+  // مشاركة نص الخطة
+  function gv(id){var el=document.getElementById(id);if(!el)return '';if(el.tagName==='SELECT')return el.options[el.selectedIndex]?el.options[el.selectedIndex].text:'';return el.value||'';}
+  var lines=[
+    '📚 خطة الدرس اليومية',
+    '🏫 '+gv('f-school'),
+    '━━━━━━━━━━━━━',
+    '👨🏫 '+gv('f-teacher'),
+    '📖 '+gv('f-subject')+' | 🎓 '+gv('f-grade'),
+    '📝 '+gv('f-title'),
+    '📅 '+gv('f-date')+' | 📚 '+gv('f-semester'),
+    '━━━━━━━━━━━━━'
+  ];
+  var objs=[];
+  document.querySelectorAll('#objlist .or2 input').forEach(function(i){if(i.value)objs.push('• '+i.value);});
+  if(objs.length){lines.push('🎯 الأهداف:');objs.slice(0,5).forEach(function(o){lines.push(o);});}
+  var steps=[];
+  document.querySelectorAll('#stepslist textarea').forEach(function(t,i){if(t.value)steps.push((i+1)+'. '+t.value.slice(0,60));});
+  if(steps.length){lines.push('📋 خطوات الدرس:');steps.forEach(function(s){lines.push(s);});}
+  var hw=gv('f-hw');
+  if(hw)lines.push('📚 الواجب: '+hw);
+  lines.push('━━━━━━━━━━━━━');
+  lines.push('✨ إعداد: أ. خليل محمد خليل عطيله | Claude AI');
+  var text=lines.join('\n');
+  if(navigator.share){
+    navigator.share({title:'خطة درس — '+gv('f-title'),text:text})
+      .then(function(){toast('✅ تمت المشاركة');})
+      .catch(function(){});
+  } else {
+    navigator.clipboard.writeText(text)
+      .then(function(){toast('📋 تم النسخ — الصقه في واتساب');})
+      .catch(function(){toast('📋 انسخ النص يدوياً');});
+  }
+}
+
+
+function downloadHTML(){
+  var html = buildPrintHTML();
+  try{
+    var blob = new Blob([html],{type:'text/html;charset=utf-8'});
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement('a');
+    a.href = url;
+    var title = (document.getElementById('f-title')||{}).value||'خطة_درس';
+    a.download = 'خطة_'+title.replace(/\s+/g,'_')+'_بيت_عوا.html';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast('⬇️ تم التحميل — افتح الملف في المتصفح واطبع كـ PDF');
+  }catch(e){ toast('استخدم زر المشاركة','⚠️'); }
+}
+
+// ════════════════════════════════════════════════════════════════
+// توليد PDF حقيقي — يعمل على الجوال والحاسوب
+// ════════════════════════════════════════════════════════════════
+function doPrint(){
+  // عرض شاشة المعاينة الداخلية أولاً
+  var html = buildPrintHTML();
+  showInternalPreview(html);
+}
+
+function showInternalPreview(html){
+  var ov = document.getElementById('preview-ov');
+  var ct = document.getElementById('preview-content');
+  if(!ov || !ct) return;
+  var body  = html.replace(/[\s\S]*?<body[^>]*>/i,'').replace(/<\/body>[\s\S]*/i,'');
+  var style = (html.match(/<style[^>]*>([\s\S]*?)<\/style>/i)||['',''])[1];
+  ct.innerHTML = '<style>'+style+'* { -webkit-print-color-adjust: exact !important; }</style>' + body;
+  ov.style.display = 'block';
+  ov.scrollTop = 0;
+  toast('📄 جاهز — اختر طريقة الطباعة');
+}
+
+// ══ طباعة عبر المتصفح (حاسوب + جوال) ══
+function browserPrint(){
+  var html = buildPrintHTML();
+  // طريقة 1: window.open
+  var w = null;
+  try{ w = window.open('','_blank'); }catch(e){}
+  if(w && !w.closed){
+    w.document.write(html);
+    w.document.close();
+    w.focus();
+    setTimeout(function(){ w.print(); }, 600);
+    toast('🖨️ تم فتح نافذة الطباعة');
+    return;
+  }
+  // طريقة 2: iframe
+  var iframe = document.getElementById('pf');
+  if(!iframe){
+    iframe = document.createElement('iframe');
+    iframe.id = 'pf';
+    iframe.style.cssText = 'position:fixed;left:-9999px;top:-9999px;width:1px;height:1px;border:none;';
+    document.body.appendChild(iframe);
+  }
+  try{
+    var d = iframe.contentDocument || iframe.contentWindow.document;
+    d.open(); d.write(html); d.close();
+    setTimeout(function(){
+      iframe.contentWindow.focus();
+      iframe.contentWindow.print();
+      toast('🖨️ جارٍ الطباعة...');
+    }, 600);
+  }catch(e){ generatePDF(); }
+}
+
+// ══ توليد PDF حقيقي بـ html2canvas + jsPDF ══
+async function generatePDF(){
+  toast('⏳ جارٍ إنشاء PDF...');
+
+  // بناء div مؤقت للمحتوى
+  var html = buildPrintHTML();
+  var div = document.createElement('div');
+  div.style.cssText = 'position:fixed;left:-9999px;top:0;width:794px;background:#fff;direction:rtl;font-family:Tajawal,sans-serif;';
+  var body = html.replace(/[\s\S]*?<body[^>]*>/i,'').replace(/<\/body>[\s\S]*/i,'');
+  var style = (html.match(/<style[^>]*>([\s\S]*?)<\/style>/i)||['',''])[1];
+  div.innerHTML = '<style>'+style+'</style>'+body;
+  document.body.appendChild(div);
+
+  try{
+    // تحويل لصورة
+    var canvas = await html2canvas(div, {
+      scale: 2,
+      useCORS: true,
+      allowTaint: true,
+      backgroundColor: '#ffffff',
+      width: 794,
+      windowWidth: 794
+    });
+    document.body.removeChild(div);
+
+    // بناء PDF
+    var imgData = canvas.toDataURL('image/jpeg', 0.95);
+    var pdf = new window.jspdf.jsPDF({
+      orientation: 'portrait',
+      unit: 'mm',
+      format: 'a4'
+    });
+
+    var pdfW = pdf.internal.pageSize.getWidth();
+    var pdfH = pdf.internal.pageSize.getHeight();
+    var imgH = (canvas.height * pdfW) / canvas.width;
+
+    // إضافة صفحات متعددة إذا لزم
+    var y = 0;
+    while(y < imgH){
+      if(y > 0) pdf.addPage();
+      pdf.addImage(imgData, 'JPEG', 0, -y, pdfW, imgH);
+      y += pdfH;
+    }
+
+    // حفظ PDF
+    var title = (document.getElementById('f-title')||{}).value||'خطة_درس';
+    var fname = 'خطة_'+title.replace(/\s+/g,'_')+'_بيت_عوا.pdf';
+    pdf.save(fname);
+    toast('✅ تم حفظ PDF: '+fname);
+
+  }catch(err){
+    if(div.parentNode) document.body.removeChild(div);
+    console.error('PDF error:', err);
+    // fallback: تحميل HTML
+    downloadHTML();
+  }
+}
+
+// ══ تحميل HTML ══
+function downloadHTML(){
+  var html = buildPrintHTML();
+  try{
+    var blob = new Blob([html],{type:'text/html;charset=utf-8'});
+    var url  = URL.createObjectURL(blob);
+    var a    = document.createElement('a');
+    var ttl  = (document.getElementById('f-title')||{}).value||'خطة_درس';
+    a.href   = url;
+    a.download = 'خطة_'+ttl.replace(/\s+/g,'_')+'.html';
+    document.body.appendChild(a); a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+    toast('⬇️ تم التحميل — افتح في Chrome واطبع');
+  }catch(e){ toast('⚠️ استخدم زر المشاركة','⚠️'); }
+}
+
+
+function showKeySetup(){
+  var ov=document.getElementById('key-setup-ov');
+  if(ov) ov.style.display='flex';
+}
+function saveKeys(){
+  var who    = document.getElementById('setup-who').value;
+  var suffix = who==='hamza' ? '_hamza' : '_khalil';
+  var gKey   = (document.getElementById('setup-gemini').value||'').trim();
+  var qKey   = (document.getElementById('setup-groq').value||'').trim();
+
+  if(!gKey && !qKey){ toast('أدخل مفتاحاً واحداً على الأقل','⚠️'); return; }
+  if(gKey) localStorage.setItem('gemini_key'+suffix, gKey);
+  if(qKey) localStorage.setItem('groq_key'+suffix,   qKey);
+
+  // تحديث المعلم في التطبيق
+  var te=document.getElementById('f-teacher');
+  if(te && te.tagName==='SELECT'){
+    for(var i=0;i<te.options.length;i++){
+      if((who==='hamza' && te.options[i].text.indexOf('حمزة')>=0) ||
+         (who==='khalil'&& te.options[i].text.indexOf('خليل')>=0)){
+        te.selectedIndex=i; break;
+      }
+    }
+  }
+  document.getElementById('key-setup-ov').style.display='none';
+  var msg = (gKey&&qKey)?'Gemini أساسي + Groq احتياطي ✅':gKey?'Gemini جاهز ✅':'Groq جاهز ✅';
+  toast('✅ '+msg+' — مجاني للأبد!');
+  updateSetupBadge();
+}
+
+function updateSetupBadge(){
+  var te=document.getElementById('f-teacher');
+  var teacher=te?(te.tagName==='SELECT'?(te.options[te.selectedIndex]||{}).text||'':te.value||''):'';
+  var suffix=teacher.indexOf('حمزة')>=0?'_hamza':'_khalil';
+  var hasG=!!localStorage.getItem('gemini_key'+suffix);
+  var hasQ=!!localStorage.getItem('groq_key'+suffix);
+  var statusEl=document.getElementById('auto-status');
+  if(hasG||hasQ){
+    var badge=(hasG?'⚡ Gemini':'')+(hasG&&hasQ?' + ':'')+(hasQ?'🤖 Groq':'');
+    if(statusEl && statusEl.textContent.indexOf('اختر')>=0){
+      statusEl.textContent='اختر المادة والصف واكتب العنوان — يتولد كل شيء تلقائياً | '+badge;
+    }
+  }
+}
+
+function checkFreeKeys(){
+  var te=document.getElementById('f-teacher');
+  var teacher=te?(te.tagName==='SELECT'?(te.options[te.selectedIndex]||{}).text||'':te.value||''):'';
+  var suffix=teacher.indexOf('حمزة')>=0?'_hamza':'_khalil';
+  var hasG=!!localStorage.getItem('gemini_key'+suffix);
+  var hasQ=!!localStorage.getItem('groq_key'+suffix);
+  if(!hasG && !hasQ) showKeySetup();
+  else updateSetupBadge();
+}
+
+</script>
+
+<!-- شاشة الإعداد الأولي -->
+<div id="setup-ov" style="display:none;position:fixed;inset:0;background:linear-gradient(135deg,#0f172a,#1a3a5c);z-index:99999;align-items:center;justify-content:center;padding:16px;font-family:Tajawal,sans-serif;direction:rtl">
+  <div style="background:#fff;border-radius:20px;max-width:500px;width:100%;padding:28px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+    <div style="text-align:center;margin-bottom:20px">
+      <div style="font-size:48px;margin-bottom:8px">🔑</div>
+      <h2 style="font-family:Amiri,serif;color:#1a3a5c;font-size:20px;margin-bottom:4px">إعداد التطبيق — مرة واحدة فقط</h2>
+      <p style="font-size:12px;color:#888">أدخل بيانات المعلم ومفتاح الذكاء الاصطناعي المجاني</p>
+    </div>
+
+    <!-- اختيار المعلم -->
+    <div style="margin-bottom:14px">
+      <label style="font-size:12px;font-weight:700;color:#1a3a5c;display:block;margin-bottom:5px">👨🏫 اسم المعلم</label>
+      <select id="setup-teacher" style="width:100%;padding:10px;border:2px solid #e2e8f0;border-radius:9px;font-family:Tajawal,sans-serif;font-size:13px;color:#1a1a1a">
+        <option value="أ. خليل محمد خليل عطيله">أ. خليل محمد خليل عطيله</option>
+        <option value="أ. حمزة محمد خليل عطيله">أ. حمزة محمد خليل عطيله</option>
+      </select>
+    </div>
+
+    <!-- اختيار المزود -->
+    <div style="margin-bottom:14px">
+      <label style="font-size:12px;font-weight:700;color:#1a3a5c;display:block;margin-bottom:5px">🤖 مزود الذكاء الاصطناعي المجاني</label>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px" id="provider-btns">
+        <button onclick="selectProvider('gemini')" id="btn-gemini" style="padding:12px;border:2px solid #4285f4;border-radius:10px;background:#f0f7ff;cursor:pointer;font-family:Tajawal,sans-serif;font-size:12px;font-weight:700;color:#1a3a5c;transition:.2s">
+          <div style="font-size:22px;margin-bottom:3px">⚡</div>
+          <div>Google Gemini</div>
+          <div style="font-size:10px;color:#666;margin-top:2px">مجاني — بدون بطاقة</div>
+        </button>
+        <button onclick="selectProvider('groq')" id="btn-groq" style="padding:12px;border:2px solid #e2e8f0;border-radius:10px;background:#f8f8f8;cursor:pointer;font-family:Tajawal,sans-serif;font-size:12px;font-weight:700;color:#1a3a5c;transition:.2s">
+          <div style="font-size:22px;margin-bottom:3px">🤖</div>
+          <div>Groq</div>
+          <div style="font-size:10px;color:#666;margin-top:2px">مجاني — سريع جداً</div>
+        </button>
+      </div>
+    </div>
+
+    <!-- مفتاح API -->
+    <div style="margin-bottom:8px">
+      <label style="font-size:12px;font-weight:700;color:#1a3a5c;display:block;margin-bottom:5px" id="key-label">🔑 مفتاح Google Gemini API</label>
+      <input type="password" id="setup-key" placeholder="أدخل المفتاح هنا..." style="width:100%;padding:10px;border:2px solid #e2e8f0;border-radius:9px;font-family:Tajawal,sans-serif;font-size:13px;direction:ltr">
+      <div id="key-hint" style="margin-top:6px;padding:8px 10px;background:#f0f7ff;border-radius:7px;font-size:11px;color:#1a3a5c;line-height:1.7">
+        ⚡ احصل على مفتاح <strong>Google Gemini مجاني</strong>:<br>
+        اذهب لـ <strong>aistudio.google.com</strong> → Get API Key → Create API Key
+      </div>
+    </div>
+
+    <button onclick="saveSetup()" style="width:100%;padding:13px;background:linear-gradient(135deg,#1a3a5c,#2d6a9f);color:#fff;border:none;border-radius:10px;font-family:Tajawal,sans-serif;font-size:14px;font-weight:900;cursor:pointer;margin-top:10px">
+      ✅ حفظ وبدء الاستخدام
+    </button>
+    <p style="text-align:center;font-size:10px;color:#999;margin-top:8px">يُحفظ على جهازك فقط ولا يُرسل لأي جهة</p>
+  </div>
+</div>
+
+
+<!-- معاينة الطباعة — بدون نوافذ منبثقة -->
+<div id="preview-ov" style="display:none;position:fixed;inset:0;z-index:99998;background:#e5e7eb;overflow-y:auto;font-family:Tajawal,sans-serif;direction:rtl">
+  <!-- شريط أدوات -->
+  <div style="position:sticky;top:0;z-index:9999;background:linear-gradient(135deg,#1a3a5c,#2d6a9f);padding:10px 14px;display:flex;align-items:center;gap:7px;flex-wrap:wrap">
+    <button onclick="closePrintPreview()" style="background:rgba(255,255,255,.15);color:#fff;border:none;border-radius:8px;padding:8px 12px;font-family:Tajawal,sans-serif;font-size:12px;font-weight:700;cursor:pointer">✕ إغلاق</button>
+    <span style="color:#fff;font-size:12px;font-weight:700;flex:1;text-align:center">🖨️ HP LaserJet M110w</span>
+    <button onclick="browserPrint()" style="background:#f0c94a;color:#1a1a2e;border:none;border-radius:8px;padding:9px 16px;font-family:Tajawal,sans-serif;font-size:13px;font-weight:900;cursor:pointer">🖨️ طباعة</button>
+    <button onclick="generatePDF()" style="background:#dc2626;color:#fff;border:none;border-radius:8px;padding:9px 14px;font-family:Tajawal,sans-serif;font-size:13px;font-weight:900;cursor:pointer">📥 PDF</button>
+    <button onclick="shareAsText()" style="background:#25d366;color:#fff;border:none;border-radius:8px;padding:9px 12px;font-family:Tajawal,sans-serif;font-size:12px;font-weight:700;cursor:pointer">📤 واتساب</button>
+    <button onclick="downloadHTML()" style="background:rgba(255,255,255,.15);color:#fff;border:none;border-radius:8px;padding:9px 12px;font-family:Tajawal,sans-serif;font-size:12px;font-weight:700;cursor:pointer">⬇️ HTML</button>
+  </div>
+  <div style="background:#fef3c7;padding:7px 14px;font-size:11px;color:#7a5c00;font-family:Tajawal,sans-serif;direction:rtl;text-align:center">
+    💡 <strong>حاسوب:</strong> 🖨️ طباعة ← اختر HP M110w &nbsp;|&nbsp; <strong>جوال:</strong> 📥 PDF ← يُحفظ مباشرة على الجهاز
+  </div>
+  <!-- محتوى المعاينة --><!-- محتوى المعاينة -->
+  <div id="preview-content" style="max-width:800px;margin:0 auto;background:#fff;padding:20px;min-height:100vh;box-shadow:0 0 20px rgba(0,0,0,.1);margin-top:10px;margin-bottom:10px;border-radius:8px"></div>
+</div>
+
+
+<!-- شاشة إعداد المفاتيح المجانية -->
+<div id="key-setup-ov" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:99999;align-items:center;justify-content:center;padding:12px;font-family:Tajawal,sans-serif;direction:rtl">
+  <div style="background:#fff;border-radius:18px;max-width:460px;width:100%;padding:24px;box-shadow:0 20px 60px rgba(0,0,0,.4)">
+    <div style="text-align:center;margin-bottom:18px">
+      <div style="font-size:42px;margin-bottom:6px">🔑</div>
+      <h2 style="font-family:Amiri,serif;color:#1a3a5c;font-size:18px;margin-bottom:3px">الإعداد المجاني — مرة واحدة</h2>
+      <p style="font-size:11px;color:#888">أدخل مفتاحاً واحداً على الأقل</p>
+    </div>
+
+    <!-- المعلم -->
+    <div style="margin-bottom:12px">
+      <label style="font-size:11px;font-weight:700;color:#1a3a5c;display:block;margin-bottom:4px">👨🏫 اسمك</label>
+      <select id="setup-who" style="width:100%;padding:9px;border:2px solid #e2e8f0;border-radius:8px;font-family:Tajawal,sans-serif;font-size:13px">
+        <option value="khalil">أ. خليل محمد خليل عطيله</option>
+        <option value="hamza">أ. حمزة محمد خليل عطيله</option>
+      </select>
+    </div>
+
+    <!-- Gemini -->
+    <div style="margin-bottom:10px;padding:12px;background:#f0f7ff;border-radius:10px;border:1.5px solid #4285f4">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+        <span style="font-size:16px">⚡</span>
+        <span style="font-size:12px;font-weight:700;color:#1a3a5c">Google Gemini</span>
+        <span style="font-size:10px;color:#16a34a;font-weight:700;margin-right:auto">✅ مجاني — الأعلى جودة</span>
+      </div>
+      <input type="password" id="setup-gemini" placeholder="AIza..." style="width:100%;padding:8px;border:1.5px solid #bfdbfe;border-radius:7px;font-family:monospace;font-size:12px;direction:ltr;margin-bottom:5px">
+      <div style="font-size:10px;color:#3b82f6">
+        🔗 <strong>aistudio.google.com</strong> → Get API Key → Create API Key (مجاني بحساب Google)
+      </div>
+    </div>
+
+    <!-- Groq -->
+    <div style="margin-bottom:14px;padding:12px;background:#fffbeb;border-radius:10px;border:1.5px solid #f59e0b">
+      <div style="display:flex;align-items:center;gap:6px;margin-bottom:6px">
+        <span style="font-size:16px">🤖</span>
+        <span style="font-size:12px;font-weight:700;color:#1a3a5c">Groq</span>
+        <span style="font-size:10px;color:#d97706;font-weight:700;margin-right:auto">✅ مجاني — الأسرع</span>
+      </div>
+      <input type="password" id="setup-groq" placeholder="gsk_..." style="width:100%;padding:8px;border:1.5px solid #fde68a;border-radius:7px;font-family:monospace;font-size:12px;direction:ltr;margin-bottom:5px">
+      <div style="font-size:10px;color:#d97706">
+        🔗 <strong>console.groq.com</strong> → API Keys → Create API Key (مجاني)
+      </div>
+    </div>
+
+    <button onclick="saveKeys()" style="width:100%;padding:13px;background:linear-gradient(135deg,#1a3a5c,#2d6a9f);color:#fff;border:none;border-radius:10px;font-family:Tajawal,sans-serif;font-size:14px;font-weight:900;cursor:pointer">
+      ✅ حفظ وبدء الاستخدام المجاني
+    </button>
+    <p style="text-align:center;font-size:10px;color:#aaa;margin-top:8px">تُحفظ على جهازك فقط ← مجاناً للأبد</p>
+  </div>
+</div>
+
+</body>
+</html>
